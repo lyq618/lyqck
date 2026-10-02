@@ -1,0 +1,45 @@
+{
+  "version": 1,
+  "outbounds": [
+    {
+      "type": "selector",
+      "tag": "select",
+      "outbounds": [
+        "auto",
+        "🇰🇬 KG 01 - lyqsp",
+        "🇰🇬 KG 02 - lyqsp",
+        "🇰🇬 KG 03 - lyqsp",
+        "🇰🇬 KG 04 - lyqsp",
+        "🇰🇬 KG 05 - lyqsp",
+        "🇰🇬 KG 06 - lyqsp",
+        "🇰🇬 KG 07 - lyqsp",
+        "🇰🇬 KG 08 - lyqsp",
+        "🇰🇬 KG 09 - lyqsp"
+      ]
+    },
+    {
+      "type": "urltest",
+      "tag": "auto",
+      "outbounds": [
+        "🇰🇬 KG 01 - lyqsp",
+        "🇰🇬 KG 02 - lyqsp",
+        "🇰🇬 KG 03 - lyqsp",
+        "🇰🇬 KG 04 - lyqsp",
+        "🇰🇬 KG 05 - lyqsp",
+        "🇰🇬 KG 06 - lyqsp",
+        "🇰🇬 KG 07 - lyqsp",
+        "🇰🇬 KG 08 - lyqsp",
+        "🇰🇬 KG 09 - lyqsp"
+      ],
+      "url": "https://www.google.com/generate_204"
+    },
+    {
+      "type": "direct",
+      "tag": "direct"
+    },
+    {
+      "type": "block",
+      "tag": "block"
+    }
+  ]
+}

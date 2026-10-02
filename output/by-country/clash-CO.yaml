@@ -4,7 +4,7 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇨🇴 CO 01 - xiaohe
+- name: 🇨🇴 CO 01 - lyqsp
   type: ss
   server: 149.104.107.41
   port: 8090
@@ -16,12 +16,12 @@ proxy-groups:
   type: select
   proxies:
   - AUTO
-  - 🇨🇴 CO 01 - xiaohe
+  - 🇨🇴 CO 01 - lyqsp
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
-  - 🇨🇴 CO 01 - xiaohe
+  - 🇨🇴 CO 01 - lyqsp
 rules:
 - MATCH,PROXIES
