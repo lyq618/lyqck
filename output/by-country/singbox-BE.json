@@ -6,14 +6,16 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇷🇴 RO 01 - lyqsp"
+        "🇧🇪 BE 01 - lyqsp",
+        "🇧🇪 BE 02 - lyqsp"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇷🇴 RO 01 - lyqsp"
+        "🇧🇪 BE 01 - lyqsp",
+        "🇧🇪 BE 02 - lyqsp"
       ],
       "url": "https://www.google.com/generate_204"
     },
