@@ -6,14 +6,16 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇰🇷 韩国 (South Korea) 01 (家宽) - lyqsp"
+        "🇮🇪 IE 01 - lyqsp",
+        "🇮🇪 IE 02 - lyqsp"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇰🇷 韩国 (South Korea) 01 (家宽) - lyqsp"
+        "🇮🇪 IE 01 - lyqsp",
+        "🇮🇪 IE 02 - lyqsp"
       ],
       "url": "https://www.google.com/generate_204"
     },
