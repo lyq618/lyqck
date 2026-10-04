@@ -22,10 +22,10 @@ proxies:
   skip-cert-verify: true
 - name: 🇮🇹 意大利 (Italy) 03 - lyqsp
   type: ss
-  server: 185.164.175.81
-  port: 19999
+  server: 57.131.48.45
+  port: 8388
   cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  password: itzvpn@321
   udp: true
 - name: 🇮🇹 意大利 (Italy) 04 - lyqsp
   type: vless
@@ -41,6 +41,13 @@ proxies:
     path: /RoBeRt
     headers:
       Host: milan.adaspoloandco.com
+- name: 🇮🇹 意大利 (Italy) 05 - lyqsp
+  type: ss
+  server: 185.164.175.81
+  port: 19999
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  udp: true
 proxy-groups:
 - name: PROXIES
   type: select
@@ -50,6 +57,7 @@ proxy-groups:
   - 🇮🇹 意大利 (Italy) 02 - lyqsp
   - 🇮🇹 意大利 (Italy) 03 - lyqsp
   - 🇮🇹 意大利 (Italy) 04 - lyqsp
+  - 🇮🇹 意大利 (Italy) 05 - lyqsp
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -59,5 +67,6 @@ proxy-groups:
   - 🇮🇹 意大利 (Italy) 02 - lyqsp
   - 🇮🇹 意大利 (Italy) 03 - lyqsp
   - 🇮🇹 意大利 (Italy) 04 - lyqsp
+  - 🇮🇹 意大利 (Italy) 05 - lyqsp
 rules:
 - MATCH,PROXIES
