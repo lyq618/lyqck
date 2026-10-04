@@ -6,18 +6,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇫🇮 FI 01 - lyqsp",
-        "🇫🇮 FI 02 - lyqsp",
-        "🇫🇮 FI 03 - lyqsp"
+        "🇧🇪 BE 01 - lyqsp"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇫🇮 FI 01 - lyqsp",
-        "🇫🇮 FI 02 - lyqsp",
-        "🇫🇮 FI 03 - lyqsp"
+        "🇧🇪 BE 01 - lyqsp"
       ],
       "url": "https://www.google.com/generate_204"
     },
