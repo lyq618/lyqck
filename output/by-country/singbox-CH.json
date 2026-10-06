@@ -6,20 +6,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇨🇭 CH 01 - lyqsp",
-        "🇨🇭 CH 02 - lyqsp",
-        "🇨🇭 CH 03 - lyqsp",
-        "🇨🇭 CH 04 - lyqsp"
+        "🇨🇭 CH 01 - lyqsp"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇨🇭 CH 01 - lyqsp",
-        "🇨🇭 CH 02 - lyqsp",
-        "🇨🇭 CH 03 - lyqsp",
-        "🇨🇭 CH 04 - lyqsp"
+        "🇨🇭 CH 01 - lyqsp"
       ],
       "url": "https://www.google.com/generate_204"
     },
