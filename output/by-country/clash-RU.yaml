@@ -6,48 +6,6 @@ log-level: info
 proxies:
 - name: 🇷🇺 俄罗斯 (Russia) 01 - lyqsp
   type: ss
-  server: 130.49.189.158
-  port: 43558
-  cipher: chacha20-ietf-poly1305
-  password: eicdhshSrFLCx/sZ1PSpuKyoVWGZpU95tFS4iGC1c04=
-  udp: true
-- name: 🇷🇺 俄罗斯 (Russia) 02 - lyqsp
-  type: vless
-  server: 188.114.97.1
-  port: 2053
-  uuid: 0b3e7958-e5c4-498f-ab21-b49686f95d2d
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: bold-term-4edd.mbigspot.workers.dev
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: bold-term-4edd.mbigspot.workers.dev
-- name: 🇷🇺 俄罗斯 (Russia) 03 - lyqsp
-  type: ss
-  server: 194.87.68.140
-  port: 50660
-  cipher: aes-256-gcm
-  password: 81a20429165df87e
-  udp: true
-- name: 🇷🇺 俄罗斯 (Russia) 04 - lyqsp
-  type: vless
-  server: 8.6.112.9
-  port: 443
-  uuid: 11e9eea1-b1a9-4f02-a1a1-b24f7664b1cf
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ancIEnt-HeaRt-60c5.dPccgIzieB.WoRKers.dEV
-  network: ws
-  ws-opts:
-    path: /eyJqdW5rIjoiYW1sczlYWkFHOCIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbXX0
-    headers:
-      Host: ancient-heart-60c5.dpccgizieb.workers.dev
-- name: 🇷🇺 俄罗斯 (Russia) 05 - lyqsp
-  type: ss
   server: 46.17.45.31
   port: 50660
   cipher: aes-256-gcm
@@ -59,19 +17,11 @@ proxy-groups:
   proxies:
   - AUTO
   - 🇷🇺 俄罗斯 (Russia) 01 - lyqsp
-  - 🇷🇺 俄罗斯 (Russia) 02 - lyqsp
-  - 🇷🇺 俄罗斯 (Russia) 03 - lyqsp
-  - 🇷🇺 俄罗斯 (Russia) 04 - lyqsp
-  - 🇷🇺 俄罗斯 (Russia) 05 - lyqsp
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
   - 🇷🇺 俄罗斯 (Russia) 01 - lyqsp
-  - 🇷🇺 俄罗斯 (Russia) 02 - lyqsp
-  - 🇷🇺 俄罗斯 (Russia) 03 - lyqsp
-  - 🇷🇺 俄罗斯 (Russia) 04 - lyqsp
-  - 🇷🇺 俄罗斯 (Russia) 05 - lyqsp
 rules:
 - MATCH,PROXIES
