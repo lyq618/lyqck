@@ -18,17 +18,17 @@ proxies:
   client-fingerprint: chrome
 - name: 🇿🇦 ZA 02 - lyqsp
   type: ss
-  server: 102.133.165.160
-  port: 16233
-  cipher: chacha20-ietf-poly1305
-  password: Xsy8Ox4yOV3xLlpxtjzs3X
-  udp: true
-- name: 🇿🇦 ZA 03 - lyqsp
-  type: ss
   server: 20.87.212.24
   port: 443
   cipher: chacha20-ietf-poly1305
   password: zlHMpI7N5dkZOHdH
+  udp: true
+- name: 🇿🇦 ZA 03 - lyqsp
+  type: ss
+  server: 102.133.165.160
+  port: 16233
+  cipher: chacha20-ietf-poly1305
+  password: Xsy8Ox4yOV3xLlpxtjzs3X
   udp: true
 - name: 🇿🇦 ZA 04 - lyqsp
   type: ss

@@ -1,0 +1,61 @@
+{
+  "version": 1,
+  "outbounds": [
+    {
+      "type": "selector",
+      "tag": "select",
+      "outbounds": [
+        "auto",
+        "🇲🇩 MD 01 - lyqsp",
+        "🇲🇩 MD 02 - lyqsp",
+        "🇲🇩 MD 03 - lyqsp",
+        "🇲🇩 MD 04 - lyqsp",
+        "🇲🇩 MD 05 - lyqsp",
+        "🇲🇩 MD 06 - lyqsp",
+        "🇲🇩 MD 07 - lyqsp",
+        "🇲🇩 MD 08 - lyqsp",
+        "🇲🇩 MD 09 - lyqsp",
+        "🇲🇩 MD 10 - lyqsp",
+        "🇲🇩 MD 11 - lyqsp",
+        "🇲🇩 MD 12 - lyqsp",
+        "🇲🇩 MD 13 - lyqsp",
+        "🇲🇩 MD 14 - lyqsp",
+        "🇲🇩 MD 15 - lyqsp",
+        "🇲🇩 MD 16 - lyqsp",
+        "🇲🇩 MD 17 - lyqsp"
+      ]
+    },
+    {
+      "type": "urltest",
+      "tag": "auto",
+      "outbounds": [
+        "🇲🇩 MD 01 - lyqsp",
+        "🇲🇩 MD 02 - lyqsp",
+        "🇲🇩 MD 03 - lyqsp",
+        "🇲🇩 MD 04 - lyqsp",
+        "🇲🇩 MD 05 - lyqsp",
+        "🇲🇩 MD 06 - lyqsp",
+        "🇲🇩 MD 07 - lyqsp",
+        "🇲🇩 MD 08 - lyqsp",
+        "🇲🇩 MD 09 - lyqsp",
+        "🇲🇩 MD 10 - lyqsp",
+        "🇲🇩 MD 11 - lyqsp",
+        "🇲🇩 MD 12 - lyqsp",
+        "🇲🇩 MD 13 - lyqsp",
+        "🇲🇩 MD 14 - lyqsp",
+        "🇲🇩 MD 15 - lyqsp",
+        "🇲🇩 MD 16 - lyqsp",
+        "🇲🇩 MD 17 - lyqsp"
+      ],
+      "url": "https://www.google.com/generate_204"
+    },
+    {
+      "type": "direct",
+      "tag": "direct"
+    },
+    {
+      "type": "block",
+      "tag": "block"
+    }
+  ]
+}

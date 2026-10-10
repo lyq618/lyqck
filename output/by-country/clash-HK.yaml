@@ -6,24 +6,19 @@ log-level: info
 proxies:
 - name: 🇭🇰 中国香港 (Hong Kong) 01 - lyqsp
   type: vless
-  server: 34.92.19.135
-  port: 443
-  uuid: 90153538-ef08-4942-b8e1-41e7c523e659
+  server: 43.129.80.179
+  port: 8443
+  uuid: d342d11e-d224-4463-b982-532309285094
   udp: true
   tls: true
   skip-cert-verify: true
-  reality-opts:
-    public-key: tSBJnEt6E1dy6UgX9gX5wUfvZ2KAXjGWVKsEq886OWM
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
+  servername: ccc.010304.xyz
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: ccc.010304.xyz
 - name: 🇭🇰 中国香港 (Hong Kong) 02 - lyqsp
-  type: ss
-  server: ruot.ayucloudservices.nl
-  port: 40004
-  cipher: aes-128-gcm
-  password: 70a5c510-d56d-43e7-b150-9c00c969bd50
-  udp: true
-- name: 🇭🇰 中国香港 (Hong Kong) 03 - lyqsp
   type: vmess
   server: 156.245.232.239
   port: 35043
@@ -38,23 +33,7 @@ proxies:
     path: /
     headers:
       Host: ''
-- name: 🇭🇰 中国香港 (Hong Kong) 04 - lyqsp
-  type: vmess
-  server: yg1.ygkkk.dpdns.org
-  port: 443
-  uuid: b2ba4a73-3123-479e-aa96-5973a9ecd0c0
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: jmp1.907737.xyz
-  network: ws
-  ws-opts:
-    path: /b2ba4a73-3123-479e-aa96-5973a9ecd0c0-vm
-    headers:
-      Host: jmp1.907737.xyz
-- name: 🇭🇰 中国香港 (Hong Kong) 05 - lyqsp
+- name: 🇭🇰 中国香港 (Hong Kong) 03 - lyqsp
   type: vmess
   server: 156.245.232.239
   port: 35043
@@ -66,10 +45,10 @@ proxies:
   skip-cert-verify: true
   network: ws
   ws-opts:
-    path: ''
+    path: /
     headers:
-      Host: ''
-- name: 🇭🇰 中国香港 (Hong Kong) 06 - lyqsp
+      Host: www.pubgmobile.com
+- name: 🇭🇰 中国香港 (Hong Kong) 04 - lyqsp
   type: vmess
   server: 8.217.13.103
   port: 443
@@ -85,35 +64,18 @@ proxies:
     path: /ws-vmess
     headers:
       Host: qtkdr8jxe3wefxjm.v.3dns.vip
-- name: 🇭🇰 中国香港 (Hong Kong) 07 - lyqsp
-  type: vmess
-  server: 47.244.120.197
-  port: 36703
-  uuid: 45b83519-9c4f-4052-a11b-02e017b636d4
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /arki
-    headers:
-      Host: ''
-- name: 🇭🇰 中国香港 (Hong Kong) 08 - lyqsp
+- name: 🇭🇰 中国香港 (Hong Kong) 05 - lyqsp
   type: vless
-  server: 43.129.80.179
-  port: 8443
-  uuid: d342d11e-d224-4463-b982-532309285094
+  server: 34.92.19.135
+  port: 443
+  uuid: 90153538-ef08-4942-b8e1-41e7c523e659
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: ccc.010304.xyz
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: ccc.010304.xyz
+  reality-opts:
+    public-key: tSBJnEt6E1dy6UgX9gX5wUfvZ2KAXjGWVKsEq886OWM
+  servername: www.cloudflare.com
+  client-fingerprint: ios
 proxy-groups:
 - name: PROXIES
   type: select
@@ -124,9 +86,6 @@ proxy-groups:
   - 🇭🇰 中国香港 (Hong Kong) 03 - lyqsp
   - 🇭🇰 中国香港 (Hong Kong) 04 - lyqsp
   - 🇭🇰 中国香港 (Hong Kong) 05 - lyqsp
-  - 🇭🇰 中国香港 (Hong Kong) 06 - lyqsp
-  - 🇭🇰 中国香港 (Hong Kong) 07 - lyqsp
-  - 🇭🇰 中国香港 (Hong Kong) 08 - lyqsp
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -137,8 +96,5 @@ proxy-groups:
   - 🇭🇰 中国香港 (Hong Kong) 03 - lyqsp
   - 🇭🇰 中国香港 (Hong Kong) 04 - lyqsp
   - 🇭🇰 中国香港 (Hong Kong) 05 - lyqsp
-  - 🇭🇰 中国香港 (Hong Kong) 06 - lyqsp
-  - 🇭🇰 中国香港 (Hong Kong) 07 - lyqsp
-  - 🇭🇰 中国香港 (Hong Kong) 08 - lyqsp
 rules:
 - MATCH,PROXIES
