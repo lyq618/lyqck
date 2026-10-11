@@ -32,46 +32,6 @@ proxies:
       Host: uae.unixzone.us
 - name: 🇦🇪 阿联酋 (UAE) 03 - lyqsp
   type: vless
-  server: 46.101.46.169
-  port: 486
-  uuid: 16bf3359-e7d8-4de6-86a0-6d65cf793b56
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: 9-7u3b6e.wzkija0v0du4yhk6jfyfafml3nh22kne.workers.dev
-  network: ws
-  ws-opts:
-    path: /@Marisa_kristi
-    headers:
-      Host: 9-7u3b6e.wzkija0v0du4yhk6jfyfafml3nh22kne.workers.dev
-- name: 🇦🇪 阿联酋 (UAE) 04 - lyqsp
-  type: vless
-  server: uae.unixzone.us
-  port: 22573
-  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: uae.unixzone.us
-- name: 🇦🇪 阿联酋 (UAE) 05 - lyqsp
-  type: vless
-  server: uae.unixzone.us
-  port: 22573
-  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: uae.unixzone.us
-- name: 🇦🇪 阿联酋 (UAE) 06 - lyqsp
-  type: vless
   server: uae.unixzone.us
   port: 22573
   uuid: 39947382-3212-41c9-bc3a-589574ac8b23
@@ -91,9 +51,6 @@ proxy-groups:
   - 🇦🇪 阿联酋 (UAE) 01 - lyqsp
   - 🇦🇪 阿联酋 (UAE) 02 - lyqsp
   - 🇦🇪 阿联酋 (UAE) 03 - lyqsp
-  - 🇦🇪 阿联酋 (UAE) 04 - lyqsp
-  - 🇦🇪 阿联酋 (UAE) 05 - lyqsp
-  - 🇦🇪 阿联酋 (UAE) 06 - lyqsp
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -102,8 +59,5 @@ proxy-groups:
   - 🇦🇪 阿联酋 (UAE) 01 - lyqsp
   - 🇦🇪 阿联酋 (UAE) 02 - lyqsp
   - 🇦🇪 阿联酋 (UAE) 03 - lyqsp
-  - 🇦🇪 阿联酋 (UAE) 04 - lyqsp
-  - 🇦🇪 阿联酋 (UAE) 05 - lyqsp
-  - 🇦🇪 阿联酋 (UAE) 06 - lyqsp
 rules:
 - MATCH,PROXIES
