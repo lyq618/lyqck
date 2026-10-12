@@ -6,7 +6,7 @@ log-level: info
 proxies:
 - name: 🇲🇾 MY 01 - lyqsp
   type: vless
-  server: platform117.golnamakcert.top
+  server: platform101.golnamakcert.top
   port: 80
   uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
   udp: true
@@ -14,49 +14,10 @@ proxies:
   skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /platform117
+    path: /platform101
     headers:
-      Host: platform117.halalkhor.info
+      Host: platform101.halalkhor.info
 - name: 🇲🇾 MY 02 - lyqsp
-  type: vless
-  server: platform118.golnamakcert.top
-  port: 80
-  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /platform118
-    headers:
-      Host: platform118.halalkhor.info
-- name: 🇲🇾 MY 03 - lyqsp
-  type: vless
-  server: 45.195.69.230
-  port: 80
-  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /platform103
-    headers:
-      Host: platform103.halalkhor.info
-- name: 🇲🇾 MY 04 - lyqsp
-  type: vless
-  server: platform103.golnamakcert.top
-  port: 80
-  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /platform103
-    headers:
-      Host: platform103.halalkhor.info
-- name: 🇲🇾 MY 05 - lyqsp
   type: vless
   server: 216.173.67.59
   port: 443
@@ -70,20 +31,7 @@ proxies:
     path: /
     headers:
       Host: ccc.010304.xyz
-- name: 🇲🇾 MY 06 - lyqsp
-  type: vless
-  server: platform102.golnamakcert.top
-  port: 80
-  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /platform102
-    headers:
-      Host: platform102.halalkhor.info
-- name: 🇲🇾 MY 07 - lyqsp
+- name: 🇲🇾 MY 03 - lyqsp
   type: vless
   server: 216.173.67.59
   port: 443
@@ -97,9 +45,9 @@ proxies:
     path: /fp=chrome
     headers:
       Host: ccc.010304.xyz
-- name: 🇲🇾 MY 08 - lyqsp
+- name: 🇲🇾 MY 04 - lyqsp
   type: vless
-  server: platform101.golnamakcert.top
+  server: platform102.golnamakcert.top
   port: 80
   uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
   udp: true
@@ -107,9 +55,9 @@ proxies:
   skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /platform101
+    path: /platform102
     headers:
-      Host: platform101.halalkhor.info
+      Host: platform102.halalkhor.info
 proxy-groups:
 - name: PROXIES
   type: select
@@ -119,10 +67,6 @@ proxy-groups:
   - 🇲🇾 MY 02 - lyqsp
   - 🇲🇾 MY 03 - lyqsp
   - 🇲🇾 MY 04 - lyqsp
-  - 🇲🇾 MY 05 - lyqsp
-  - 🇲🇾 MY 06 - lyqsp
-  - 🇲🇾 MY 07 - lyqsp
-  - 🇲🇾 MY 08 - lyqsp
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -132,9 +76,5 @@ proxy-groups:
   - 🇲🇾 MY 02 - lyqsp
   - 🇲🇾 MY 03 - lyqsp
   - 🇲🇾 MY 04 - lyqsp
-  - 🇲🇾 MY 05 - lyqsp
-  - 🇲🇾 MY 06 - lyqsp
-  - 🇲🇾 MY 07 - lyqsp
-  - 🇲🇾 MY 08 - lyqsp
 rules:
 - MATCH,PROXIES
