@@ -6,20 +6,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇪🇪 EE 01 - lyqsp",
-        "🇪🇪 EE 02 - lyqsp",
-        "🇪🇪 EE 03 - lyqsp",
-        "🇪🇪 EE 04 - lyqsp"
+        "🇪🇪 EE 01 - lyqsp"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇪🇪 EE 01 - lyqsp",
-        "🇪🇪 EE 02 - lyqsp",
-        "🇪🇪 EE 03 - lyqsp",
-        "🇪🇪 EE 04 - lyqsp"
+        "🇪🇪 EE 01 - lyqsp"
       ],
       "url": "https://www.google.com/generate_204"
     },
