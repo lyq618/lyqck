@@ -19,17 +19,18 @@ proxies:
       Host: uae.unixzone.us
 - name: 🇦🇪 阿联酋 (UAE) 02 - lyqsp
   type: vless
-  server: uae.unixzone.us
-  port: 22573
-  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
+  server: 54.178.110.17
+  port: 4443
+  uuid: d5fbd83b-7346-4ad9-94c0-76293724824d
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
+  servername: sxyyvihkektlx4rjxsdj.pkc73phpweu4rbxbatm444.workers.dev
   network: ws
   ws-opts:
-    path: /
+    path: /@Marisa_kristi
     headers:
-      Host: uae.unixzone.us
+      Host: sxyyvihkektlx4rjxsdj.pkc73phpweu4rbxbatm444.workers.dev
 - name: 🇦🇪 阿联酋 (UAE) 03 - lyqsp
   type: vless
   server: uae.unixzone.us
@@ -45,20 +46,21 @@ proxies:
       Host: uae.unixzone.us
 - name: 🇦🇪 阿联酋 (UAE) 04 - lyqsp
   type: vless
-  server: 84.235.244.108
-  port: 22573
-  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
+  server: 31.57.190.17
+  port: 443
+  uuid: e6df2095-a73c-4043-8693-8d5a03686870
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
+  servername: lucasjow.us.ci
   network: ws
   ws-opts:
-    path: /
+    path: /cart/docs/www/proxyip=108.160.132.132fp=unsafe
     headers:
-      Host: uae.unixzone.us
+      Host: lucasjow.us.ci
 - name: 🇦🇪 阿联酋 (UAE) 05 - lyqsp
   type: vless
-  server: 84.235.244.108
+  server: uae.unixzone.us
   port: 22573
   uuid: 39947382-3212-41c9-bc3a-589574ac8b23
   udp: true
@@ -71,33 +73,34 @@ proxies:
       Host: uae.unixzone.us
 - name: 🇦🇪 阿联酋 (UAE) 06 - lyqsp
   type: vless
-  server: uae.unixzone.us
-  port: 22573
-  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
+  server: 185.253.116.33
+  port: 14430
+  uuid: aee7ae19-672f-49d8-8a92-aa7cdfc89f89
   udp: true
   tls: false
   skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /
+    path: /vless
     headers:
-      Host: uae.unixzone.us
+      Host: 185.253.116.33
 - name: 🇦🇪 阿联酋 (UAE) 07 - lyqsp
   type: vless
-  server: uae.unixzone.us
-  port: 22573
-  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
+  server: 116.204.164.27
+  port: 7443
+  uuid: 3e438472-0f1e-4bbf-be5a-67d034afd8c0
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
+  servername: ke859ch2gse1iery3hiz.e3q4a5mjld11kpj0zj8dq.workers.dev
   network: ws
   ws-opts:
-    path: /
+    path: /@Marisa_kristi
     headers:
-      Host: uae.unixzone.us
+      Host: ke859ch2gse1iery3hiz.e3q4a5mjld11kpj0zj8dq.workers.dev
 - name: 🇦🇪 阿联酋 (UAE) 08 - lyqsp
   type: vless
-  server: uae.unixzone.us
+  server: 84.235.244.108
   port: 22573
   uuid: 39947382-3212-41c9-bc3a-589574ac8b23
   udp: true
@@ -109,6 +112,112 @@ proxies:
     headers:
       Host: uae.unixzone.us
 - name: 🇦🇪 阿联酋 (UAE) 09 - lyqsp
+  type: vless
+  server: 95.174.68.188
+  port: 14430
+  uuid: 965ffbbe-c6b6-4d5f-8dea-6d8abc55d9c0
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /vless
+    headers:
+      Host: 95.174.68.188
+- name: 🇦🇪 阿联酋 (UAE) 10 - lyqsp
+  type: vless
+  server: 31.57.190.17
+  port: 443
+  uuid: e6df2095-a73c-4043-8693-8d5a03686870
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: lucasjow.us.ci
+  network: ws
+  ws-opts:
+    path: /cart/docs/www/proxyip=108.160.132.132
+    headers:
+      Host: lucasjow.us.ci
+- name: 🇦🇪 阿联酋 (UAE) 11 - lyqsp
+  type: vless
+  server: uae.unixzone.us
+  port: 22573
+  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: uae.unixzone.us
+- name: 🇦🇪 阿联酋 (UAE) 12 - lyqsp
+  type: vless
+  server: 185.253.116.33
+  port: 14430
+  uuid: aee7ae19-672f-49d8-8a92-aa7cdfc89f89
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /vless
+    headers:
+      Host: 185.253.116.33
+- name: 🇦🇪 阿联酋 (UAE) 13 - lyqsp
+  type: vless
+  server: 185.253.116.33
+  port: 14430
+  uuid: aee7ae19-672f-49d8-8a92-aa7cdfc89f89
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /vless
+    headers:
+      Host: 185.253.116.33
+- name: 🇦🇪 阿联酋 (UAE) 14 - lyqsp
+  type: vless
+  server: 31.57.190.49
+  port: 443
+  uuid: e6df2095-a73c-4043-8693-8d5a03686870
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: lucasjow.us.ci
+  network: ws
+  ws-opts:
+    path: /cart/docs/www/proxyip=108.160.132.132fp=unsafe
+    headers:
+      Host: lucasjow.us.ci
+- name: 🇦🇪 阿联酋 (UAE) 15 - lyqsp
+  type: vless
+  server: uae.unixzone.us
+  port: 22573
+  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: uae.unixzone.us
+- name: 🇦🇪 阿联酋 (UAE) 16 - lyqsp
+  type: vless
+  server: 95.174.68.188
+  port: 14430
+  uuid: 965ffbbe-c6b6-4d5f-8dea-6d8abc55d9c0
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /vless
+    headers:
+      Host: 95.174.68.188
+- name: 🇦🇪 阿联酋 (UAE) 17 - lyqsp
   type: vless
   server: 95.174.68.188
   port: 14430
@@ -135,6 +244,14 @@ proxy-groups:
   - 🇦🇪 阿联酋 (UAE) 07 - lyqsp
   - 🇦🇪 阿联酋 (UAE) 08 - lyqsp
   - 🇦🇪 阿联酋 (UAE) 09 - lyqsp
+  - 🇦🇪 阿联酋 (UAE) 10 - lyqsp
+  - 🇦🇪 阿联酋 (UAE) 11 - lyqsp
+  - 🇦🇪 阿联酋 (UAE) 12 - lyqsp
+  - 🇦🇪 阿联酋 (UAE) 13 - lyqsp
+  - 🇦🇪 阿联酋 (UAE) 14 - lyqsp
+  - 🇦🇪 阿联酋 (UAE) 15 - lyqsp
+  - 🇦🇪 阿联酋 (UAE) 16 - lyqsp
+  - 🇦🇪 阿联酋 (UAE) 17 - lyqsp
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -149,5 +266,13 @@ proxy-groups:
   - 🇦🇪 阿联酋 (UAE) 07 - lyqsp
   - 🇦🇪 阿联酋 (UAE) 08 - lyqsp
   - 🇦🇪 阿联酋 (UAE) 09 - lyqsp
+  - 🇦🇪 阿联酋 (UAE) 10 - lyqsp
+  - 🇦🇪 阿联酋 (UAE) 11 - lyqsp
+  - 🇦🇪 阿联酋 (UAE) 12 - lyqsp
+  - 🇦🇪 阿联酋 (UAE) 13 - lyqsp
+  - 🇦🇪 阿联酋 (UAE) 14 - lyqsp
+  - 🇦🇪 阿联酋 (UAE) 15 - lyqsp
+  - 🇦🇪 阿联酋 (UAE) 16 - lyqsp
+  - 🇦🇪 阿联酋 (UAE) 17 - lyqsp
 rules:
 - MATCH,PROXIES

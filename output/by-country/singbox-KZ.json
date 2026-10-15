@@ -1,0 +1,41 @@
+{
+  "version": 1,
+  "outbounds": [
+    {
+      "type": "selector",
+      "tag": "select",
+      "outbounds": [
+        "auto",
+        "🇰🇿 KZ 01 - lyqsp",
+        "🇰🇿 KZ 02 - lyqsp",
+        "🇰🇿 KZ 03 - lyqsp",
+        "🇰🇿 KZ 04 - lyqsp",
+        "🇰🇿 KZ 05 - lyqsp",
+        "🇰🇿 KZ 06 - lyqsp",
+        "🇰🇿 KZ 07 - lyqsp"
+      ]
+    },
+    {
+      "type": "urltest",
+      "tag": "auto",
+      "outbounds": [
+        "🇰🇿 KZ 01 - lyqsp",
+        "🇰🇿 KZ 02 - lyqsp",
+        "🇰🇿 KZ 03 - lyqsp",
+        "🇰🇿 KZ 04 - lyqsp",
+        "🇰🇿 KZ 05 - lyqsp",
+        "🇰🇿 KZ 06 - lyqsp",
+        "🇰🇿 KZ 07 - lyqsp"
+      ],
+      "url": "https://www.google.com/generate_204"
+    },
+    {
+      "type": "direct",
+      "tag": "direct"
+    },
+    {
+      "type": "block",
+      "tag": "block"
+    }
+  ]
+}
