@@ -28,14 +28,6 @@ proxies:
   tls: false
   skip-cert-verify: true
 - name: 🇦🇹 AT 04 - lyqsp
-  type: vless
-  server: 138.124.90.177
-  port: 10443
-  uuid: 3a0e4040-67cc-43e0-a9fb-98e15ddb0526
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇦🇹 AT 05 - lyqsp
   type: ss
   server: 82.110.60.9
   port: 19999
@@ -51,7 +43,6 @@ proxy-groups:
   - 🇦🇹 AT 02 - lyqsp
   - 🇦🇹 AT 03 - lyqsp
   - 🇦🇹 AT 04 - lyqsp
-  - 🇦🇹 AT 05 - lyqsp
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -61,6 +52,5 @@ proxy-groups:
   - 🇦🇹 AT 02 - lyqsp
   - 🇦🇹 AT 03 - lyqsp
   - 🇦🇹 AT 04 - lyqsp
-  - 🇦🇹 AT 05 - lyqsp
 rules:
 - MATCH,PROXIES
