@@ -6,27 +6,6 @@ log-level: info
 proxies:
 - name: 🇷🇺 俄罗斯 (Russia) 01 - lyqsp
   type: ss
-  server: 176.32.32.108
-  port: 18443
-  cipher: aes-256-gcm
-  password: cCMJgJTA3BA489YUYrFq7XHXSiSpWlLa
-  udp: true
-- name: 🇷🇺 俄罗斯 (Russia) 02 - lyqsp
-  type: vless
-  server: 104.18.42.54
-  port: 2083
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: newwk1.f1w.de5.net
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: newwk1.f1w.de5.net
-- name: 🇷🇺 俄罗斯 (Russia) 03 - lyqsp
-  type: ss
   server: 194.87.196.107
   port: 18443
   cipher: aes-256-gcm
@@ -38,15 +17,11 @@ proxy-groups:
   proxies:
   - AUTO
   - 🇷🇺 俄罗斯 (Russia) 01 - lyqsp
-  - 🇷🇺 俄罗斯 (Russia) 02 - lyqsp
-  - 🇷🇺 俄罗斯 (Russia) 03 - lyqsp
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
   - 🇷🇺 俄罗斯 (Russia) 01 - lyqsp
-  - 🇷🇺 俄罗斯 (Russia) 02 - lyqsp
-  - 🇷🇺 俄罗斯 (Russia) 03 - lyqsp
 rules:
 - MATCH,PROXIES
