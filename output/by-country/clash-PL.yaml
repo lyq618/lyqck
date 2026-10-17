@@ -15,32 +15,17 @@ proxies:
   servername: pl.flen-vpn.xyz
 - name: 🇵🇱 PL 02 - lyqsp
   type: vless
-  server: 2.26.225.89
-  port: 8443
-  uuid: 51a1fd52-fd88-4905-a976-35e44be28e4b
+  server: 38.244.186.167
+  port: 8445
+  uuid: f3b8d5f8-cbe9-4aca-ab34-005c51262d5e
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: 2.26.225.89
+  reality-opts:
+    public-key: -s2SHiKfXMJRYizNuu8URrx6MgyoQtBJ0QAj33qMog0
+  servername: www.samsung.com
+  client-fingerprint: chrome
 - name: 🇵🇱 PL 03 - lyqsp
-  type: vless
-  server: 2.26.225.89
-  port: 8443
-  uuid: 51a1fd52-fd88-4905-a976-35e44be28e4b
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: pl.flen-vpn.xyz
-- name: 🇵🇱 PL 04 - lyqsp
-  type: vless
-  server: 2.26.225.89
-  port: 8443
-  uuid: 51a1fd52-fd88-4905-a976-35e44be28e4b
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: pl.flen-vpn.xyz
-- name: 🇵🇱 PL 05 - lyqsp
   type: vless
   server: 38.244.186.167
   port: 8445
@@ -52,6 +37,33 @@ proxies:
     public-key: -s2SHiKfXMJRYizNuu8URrx6MgyoQtBJ0QAj33qMog0
   servername: www.samsung.com
   client-fingerprint: firefox
+- name: 🇵🇱 PL 04 - lyqsp
+  type: vless
+  server: 2.26.225.89
+  port: 8443
+  uuid: 51a1fd52-fd88-4905-a976-35e44be28e4b
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: pl.flen-vpn.xyz
+- name: 🇵🇱 PL 05 - lyqsp
+  type: vless
+  server: 2.26.225.89
+  port: 8443
+  uuid: 51a1fd52-fd88-4905-a976-35e44be28e4b
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: pl.flen-vpn.xyz
+- name: 🇵🇱 PL 06 - lyqsp
+  type: vless
+  server: 2.26.225.89
+  port: 8443
+  uuid: 51a1fd52-fd88-4905-a976-35e44be28e4b
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: pl.flen-vpn.xyz
 proxy-groups:
 - name: PROXIES
   type: select
@@ -62,6 +74,7 @@ proxy-groups:
   - 🇵🇱 PL 03 - lyqsp
   - 🇵🇱 PL 04 - lyqsp
   - 🇵🇱 PL 05 - lyqsp
+  - 🇵🇱 PL 06 - lyqsp
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -72,5 +85,6 @@ proxy-groups:
   - 🇵🇱 PL 03 - lyqsp
   - 🇵🇱 PL 04 - lyqsp
   - 🇵🇱 PL 05 - lyqsp
+  - 🇵🇱 PL 06 - lyqsp
 rules:
 - MATCH,PROXIES
