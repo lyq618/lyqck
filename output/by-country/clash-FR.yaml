@@ -5,104 +5,6 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇫🇷 法国 (France) 01 - lyqsp
-  type: vless
-  server: 54.37.136.194
-  port: 2053
-  uuid: e8a432c8-5d84-49a5-b822-67ed761a58f9
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: Vemd9Jjk5xKO8qSC3g8VVagwcb4J1BcTvp86CswQC0A
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
-- name: 🇫🇷 法国 (France) 02 - lyqsp
-  type: vless
-  server: 188.114.98.0
-  port: 443
-  uuid: 2bdcf0ac-f84e-471f-98dc-a1807acab1cb
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: skycitybox-bidarbash.sbs
-  network: ws
-  ws-opts:
-    path: /zoodi
-    headers:
-      Host: skycitybox-bidarbash.sbs
-- name: 🇫🇷 法国 (France) 03 - lyqsp
-  type: vless
-  server: 51.77.217.70
-  port: 2053
-  uuid: bf16ee0c-8b3c-41e4-ab3a-8b48033c404e
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: g63cT3uI0Y5iUtj3m__RYz7nmR1eIK4AYikdnZCl63w
-  servername: www.apple.com
-  client-fingerprint: firefox
-- name: 🇫🇷 法国 (France) 04 - lyqsp
-  type: ss
-  server: pl134.vpnbook.com
-  port: 443
-  cipher: chacha20-ietf-poly1305
-  password: e5c65ph
-  udp: true
-- name: 🇫🇷 法国 (France) 05 - lyqsp
-  type: ss
-  server: 51.83.192.80
-  port: 8388
-  cipher: aes-256-gcm
-  password: itzvpn@321
-  udp: true
-- name: 🇫🇷 法国 (France) 06 - lyqsp
-  type: vless
-  server: 54.37.136.194
-  port: 2053
-  uuid: e8a432c8-5d84-49a5-b822-67ed761a58f9
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: Vemd9Jjk5xKO8qSC3g8VVagwcb4J1BcTvp86CswQC0A
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
-- name: 🇫🇷 法国 (France) 07 - lyqsp
-  type: ss
-  server: pl140.vpnbook.com
-  port: 443
-  cipher: chacha20-ietf-poly1305
-  password: e5c65ph
-  udp: true
-- name: 🇫🇷 法国 (France) 08 - lyqsp
-  type: vmess
-  server: 54.37.131.126
-  port: 80
-  uuid: 6deef9ad-1357-443d-f95c-cb18952c20b3
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: google.whatsapp.snapp.torob.basalam.hesanid8.ir.
-- name: 🇫🇷 法国 (France) 09 - lyqsp
-  type: vless
-  server: 51.77.217.70
-  port: 2053
-  uuid: bf16ee0c-8b3c-41e4-ab3a-8b48033c404e
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: g63cT3uI0Y5iUtj3m__RYz7nmR1eIK4AYikdnZCl63w
-  servername: www.apple.com
-  client-fingerprint: chrome
-- name: 🇫🇷 法国 (France) 10 - lyqsp
   type: vmess
   server: 145.239.55.210
   port: 80
@@ -117,14 +19,50 @@ proxies:
     path: /
     headers:
       Host: google.whatsapp.snapp.torob.basalam.fortresshost.ir.
-- name: 🇫🇷 法国 (France) 11 - lyqsp
+- name: 🇫🇷 法国 (France) 02 - lyqsp
+  type: vless
+  server: 54.37.136.194
+  port: 2053
+  uuid: e8a432c8-5d84-49a5-b822-67ed761a58f9
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: Vemd9Jjk5xKO8qSC3g8VVagwcb4J1BcTvp86CswQC0A
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
+- name: 🇫🇷 法国 (France) 03 - lyqsp
+  type: vless
+  server: 54.37.136.194
+  port: 2053
+  uuid: e8a432c8-5d84-49a5-b822-67ed761a58f9
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: Vemd9Jjk5xKO8qSC3g8VVagwcb4J1BcTvp86CswQC0A
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
+- name: 🇫🇷 法国 (France) 04 - lyqsp
+  type: vless
+  server: 51.77.217.70
+  port: 2053
+  uuid: bf16ee0c-8b3c-41e4-ab3a-8b48033c404e
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: g63cT3uI0Y5iUtj3m__RYz7nmR1eIK4AYikdnZCl63w
+  servername: www.apple.com
+  client-fingerprint: firefox
+- name: 🇫🇷 法国 (France) 05 - lyqsp
   type: ss
-  server: 54.36.174.140
+  server: pl140.vpnbook.com
   port: 443
   cipher: chacha20-ietf-poly1305
   password: e5c65ph
   udp: true
-- name: 🇫🇷 法国 (France) 12 - lyqsp
+- name: 🇫🇷 法国 (France) 06 - lyqsp
   type: vless
   server: 54.37.136.194
   port: 2053
@@ -136,21 +74,14 @@ proxies:
     public-key: Vemd9Jjk5xKO8qSC3g8VVagwcb4J1BcTvp86CswQC0A
   servername: www.cloudflare.com
   client-fingerprint: random
-- name: 🇫🇷 法国 (France) 13 - lyqsp
-  type: vless
-  server: skycitybox-bidarbash.sbs
+- name: 🇫🇷 法国 (France) 07 - lyqsp
+  type: ss
+  server: pl134.vpnbook.com
   port: 443
-  uuid: 2bdcf0ac-f84e-471f-98dc-a1807acab1cb
+  cipher: chacha20-ietf-poly1305
+  password: e5c65ph
   udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: skycitybox-bidarbash.sbs
-  network: ws
-  ws-opts:
-    path: /zoodi
-    headers:
-      Host: skycitybox-bidarbash.sbs
-- name: 🇫🇷 法国 (France) 14 - lyqsp
+- name: 🇫🇷 法国 (France) 08 - lyqsp
   type: vmess
   server: 162.19.204.71
   port: 1234
@@ -161,20 +92,89 @@ proxies:
   tls: true
   skip-cert-verify: true
   servername: ''
-- name: 🇫🇷 法国 (France) 15 - lyqsp
-  type: vless
-  server: skycitybox-bidarbash.sbs
+- name: 🇫🇷 法国 (France) 09 - lyqsp
+  type: ss
+  server: 51.83.192.80
+  port: 8388
+  cipher: aes-256-gcm
+  password: itzvpn@321
+  udp: true
+- name: 🇫🇷 法国 (France) 10 - lyqsp
+  type: ss
+  server: 54.36.174.140
   port: 443
-  uuid: 2bdcf0ac-f84e-471f-98dc-a1807acab1cb
+  cipher: chacha20-ietf-poly1305
+  password: e5c65ph
+  udp: true
+- name: 🇫🇷 法国 (France) 11 - lyqsp
+  type: vmess
+  server: 54.37.131.126
+  port: 80
+  uuid: 6deef9ad-1357-443d-f95c-cb18952c20b3
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: google.whatsapp.snapp.torob.basalam.hesanid8.ir.
+- name: 🇫🇷 法国 (France) 12 - lyqsp
+  type: vless
+  server: 54.37.136.194
+  port: 2053
+  uuid: e8a432c8-5d84-49a5-b822-67ed761a58f9
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: skycitybox-bidarbash.sbs
+  reality-opts:
+    public-key: Vemd9Jjk5xKO8qSC3g8VVagwcb4J1BcTvp86CswQC0A
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
+- name: 🇫🇷 法国 (France) 13 - lyqsp
+  type: vmess
+  server: 57.128.164.21
+  port: 80
+  uuid: bda82bcd-f6e2-46ae-9552-673f0b87ac30
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /zoodi
+    path: /d3d3LmlyYW5ob3N0LmNvbQ==?ed=2560
     headers:
-      Host: skycitybox-bidarbash.sbs
+      Host: https.http.www.net.com.ramseyv2.ir.
+- name: 🇫🇷 法国 (France) 14 - lyqsp
+  type: vmess
+  server: 145.239.55.210
+  port: 80
+  uuid: 067fcd63-b215-4abd-8529-ae929a9971a9
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: google.whatsapp.snapp.torob.basalam.fortresshost.ir.
+- name: 🇫🇷 法国 (France) 15 - lyqsp
+  type: vless
+  server: 54.37.136.194
+  port: 2053
+  uuid: e8a432c8-5d84-49a5-b822-67ed761a58f9
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: Vemd9Jjk5xKO8qSC3g8VVagwcb4J1BcTvp86CswQC0A
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
 - name: 🇫🇷 法国 (France) 16 - lyqsp
   type: vless
   server: 54.37.136.194
@@ -201,114 +201,23 @@ proxies:
   client-fingerprint: chrome
 - name: 🇫🇷 法国 (France) 18 - lyqsp
   type: vless
-  server: 54.37.136.194
+  server: 51.77.217.70
   port: 2053
-  uuid: e8a432c8-5d84-49a5-b822-67ed761a58f9
+  uuid: bf16ee0c-8b3c-41e4-ab3a-8b48033c404e
   udp: true
   tls: true
   skip-cert-verify: true
   reality-opts:
-    public-key: Vemd9Jjk5xKO8qSC3g8VVagwcb4J1BcTvp86CswQC0A
-  servername: www.cloudflare.com
+    public-key: g63cT3uI0Y5iUtj3m__RYz7nmR1eIK4AYikdnZCl63w
+  servername: www.apple.com
   client-fingerprint: chrome
 - name: 🇫🇷 法国 (France) 19 - lyqsp
-  type: ss
-  server: 54.36.174.134
-  port: 443
-  cipher: chacha20-ietf-poly1305
-  password: e5c65ph
-  udp: true
-- name: 🇫🇷 法国 (France) 20 - lyqsp
-  type: vmess
-  server: 145.239.55.210
-  port: 80
-  uuid: 067fcd63-b215-4abd-8529-ae929a9971a9
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: google.whatsapp.snapp.torob.basalam.fortresshost.ir.
-- name: 🇫🇷 法国 (France) 21 - lyqsp
-  type: vless
-  server: skycitybox-bidarbash.sbs
-  port: 443
-  uuid: 2bdcf0ac-f84e-471f-98dc-a1807acab1cb
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: skycitybox-bidarbash.sbs
-  network: ws
-  ws-opts:
-    path: /zoodi
-    headers:
-      Host: skycitybox-bidarbash.sbs
-- name: 🇫🇷 法国 (France) 22 - lyqsp
-  type: vless
-  server: 54.37.136.194
-  port: 2053
-  uuid: e8a432c8-5d84-49a5-b822-67ed761a58f9
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: Vemd9Jjk5xKO8qSC3g8VVagwcb4J1BcTvp86CswQC0A
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
-- name: 🇫🇷 法国 (France) 23 - lyqsp
   type: ss
   server: 51.83.192.80
   port: 8388
   cipher: aes-256-gcm
   password: itzvpn@321
   udp: true
-- name: 🇫🇷 法国 (France) 24 - lyqsp
-  type: vless
-  server: skycitybox-bidarbash.sbs
-  port: 443
-  uuid: 2bdcf0ac-f84e-471f-98dc-a1807acab1cb
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: skycitybox-bidarbash.sbs
-  network: ws
-  ws-opts:
-    path: /zoodi
-    headers:
-      Host: skycitybox-bidarbash.sbs
-- name: 🇫🇷 法国 (France) 25 - lyqsp
-  type: vless
-  server: skycitybox-bidarbash.sbs
-  port: 443
-  uuid: 2bdcf0ac-f84e-471f-98dc-a1807acab1cb
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: skycitybox-bidarbash.sbs
-  network: ws
-  ws-opts:
-    path: /zoodi
-    headers:
-      Host: skycitybox-bidarbash.sbs
-- name: 🇫🇷 法国 (France) 26 - lyqsp
-  type: vmess
-  server: 57.128.164.21
-  port: 80
-  uuid: bda82bcd-f6e2-46ae-9552-673f0b87ac30
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /d3d3LmlyYW5ob3N0LmNvbQ==?ed=2560
-    headers:
-      Host: https.http.www.net.com.ramseyv2.ir.
 proxy-groups:
 - name: PROXIES
   type: select
@@ -333,13 +242,6 @@ proxy-groups:
   - 🇫🇷 法国 (France) 17 - lyqsp
   - 🇫🇷 法国 (France) 18 - lyqsp
   - 🇫🇷 法国 (France) 19 - lyqsp
-  - 🇫🇷 法国 (France) 20 - lyqsp
-  - 🇫🇷 法国 (France) 21 - lyqsp
-  - 🇫🇷 法国 (France) 22 - lyqsp
-  - 🇫🇷 法国 (France) 23 - lyqsp
-  - 🇫🇷 法国 (France) 24 - lyqsp
-  - 🇫🇷 法国 (France) 25 - lyqsp
-  - 🇫🇷 法国 (France) 26 - lyqsp
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -364,12 +266,5 @@ proxy-groups:
   - 🇫🇷 法国 (France) 17 - lyqsp
   - 🇫🇷 法国 (France) 18 - lyqsp
   - 🇫🇷 法国 (France) 19 - lyqsp
-  - 🇫🇷 法国 (France) 20 - lyqsp
-  - 🇫🇷 法国 (France) 21 - lyqsp
-  - 🇫🇷 法国 (France) 22 - lyqsp
-  - 🇫🇷 法国 (France) 23 - lyqsp
-  - 🇫🇷 法国 (France) 24 - lyqsp
-  - 🇫🇷 法国 (France) 25 - lyqsp
-  - 🇫🇷 法国 (France) 26 - lyqsp
 rules:
 - MATCH,PROXIES
