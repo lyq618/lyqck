@@ -12,47 +12,12 @@ proxies:
   password: e8KgS8fD0yDqYFpgN4G5piCOt9aFyqA3
   udp: true
 - name: 🇨🇭 CH 02 - lyqsp
-  type: vless
-  server: 185.18.250.245
-  port: 443
-  uuid: f77299ea-e13d-417d-8cdc-ce5566dfc94b
+  type: ss
+  server: 132.243.175.144
+  port: 8388
+  cipher: chacha20-ietf-poly1305
+  password: e8KgS8fD0yDqYFpgN4G5piCOt9aFyqA3
   udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: edu.ruangguru.com.r3xxe.eu.cc
-  network: ws
-  ws-opts:
-    path: /nl-tw
-    headers:
-      Host: edu.ruangguru.com.r3xxe.eu.cc
-- name: 🇨🇭 CH 03 - lyqsp
-  type: vless
-  server: 203.137.165.164
-  port: 57554
-  uuid: a3f199fc-0251-4c05-9e0e-0c1976945a3a
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ruu2rx-oycdrnsrzc.9uokolpk04vmg2ecqb8oys7.workers.dev
-  network: ws
-  ws-opts:
-    path: /@Marisa_kristi
-    headers:
-      Host: ruu2rx-oycdrnsrzc.9uokolpk04vmg2ecqb8oys7.workers.dev
-- name: 🇨🇭 CH 04 - lyqsp
-  type: vless
-  server: 54.179.79.12
-  port: 53646
-  uuid: d57b9436-a238-4066-8b11-d23ae57c5982
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: 9-7u3b6e.wzkija0v0du4yhk6jfyfafml3nh22kne.workers.dev
-  network: ws
-  ws-opts:
-    path: /@Marisa_kristi
-    headers:
-      Host: 9-7u3b6e.wzkija0v0du4yhk6jfyfafml3nh22kne.workers.dev
 proxy-groups:
 - name: PROXIES
   type: select
@@ -60,8 +25,6 @@ proxy-groups:
   - AUTO
   - 🇨🇭 CH 01 - lyqsp
   - 🇨🇭 CH 02 - lyqsp
-  - 🇨🇭 CH 03 - lyqsp
-  - 🇨🇭 CH 04 - lyqsp
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -69,7 +32,5 @@ proxy-groups:
   proxies:
   - 🇨🇭 CH 01 - lyqsp
   - 🇨🇭 CH 02 - lyqsp
-  - 🇨🇭 CH 03 - lyqsp
-  - 🇨🇭 CH 04 - lyqsp
 rules:
 - MATCH,PROXIES
