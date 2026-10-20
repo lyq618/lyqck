@@ -1,0 +1,37 @@
+{
+  "version": 1,
+  "outbounds": [
+    {
+      "type": "selector",
+      "tag": "select",
+      "outbounds": [
+        "auto",
+        "🇨🇭 CH 01 - lyqsp",
+        "🇨🇭 CH 02 - lyqsp",
+        "🇨🇭 CH 03 - lyqsp",
+        "🇨🇭 CH 04 - lyqsp",
+        "🇨🇭 CH 05 - lyqsp"
+      ]
+    },
+    {
+      "type": "urltest",
+      "tag": "auto",
+      "outbounds": [
+        "🇨🇭 CH 01 - lyqsp",
+        "🇨🇭 CH 02 - lyqsp",
+        "🇨🇭 CH 03 - lyqsp",
+        "🇨🇭 CH 04 - lyqsp",
+        "🇨🇭 CH 05 - lyqsp"
+      ],
+      "url": "https://www.google.com/generate_204"
+    },
+    {
+      "type": "direct",
+      "tag": "direct"
+    },
+    {
+      "type": "block",
+      "tag": "block"
+    }
+  ]
+}
