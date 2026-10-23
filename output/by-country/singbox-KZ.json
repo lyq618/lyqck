@@ -6,14 +6,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇺🇦 UA 01 - lyqsp"
+        "🇰🇿 KZ 01 - lyqsp"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇺🇦 UA 01 - lyqsp"
+        "🇰🇿 KZ 01 - lyqsp"
       ],
       "url": "https://www.google.com/generate_204"
     },

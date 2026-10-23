@@ -4,7 +4,7 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇹🇼 中国台湾 (Taiwan) 01 - lyqsp
+- name: 🇹🇼 中国台湾 (Taiwan) 01 (家宽) - lyqsp
   type: vless
   server: 60.248.219.78
   port: 443
@@ -23,12 +23,12 @@ proxy-groups:
   type: select
   proxies:
   - AUTO
-  - 🇹🇼 中国台湾 (Taiwan) 01 - lyqsp
+  - 🇹🇼 中国台湾 (Taiwan) 01 (家宽) - lyqsp
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
-  - 🇹🇼 中国台湾 (Taiwan) 01 - lyqsp
+  - 🇹🇼 中国台湾 (Taiwan) 01 (家宽) - lyqsp
 rules:
 - MATCH,PROXIES
