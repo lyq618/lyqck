@@ -20,32 +20,16 @@ proxies:
   udp: true
 - name: 🇨🇭 CH 03 - lyqsp
   type: vless
-  server: 57.129.130.63
-  port: 52014
-  uuid: d731cf09-79a6-4647-aabe-8e0fda4fe3be
+  server: 208.69.78.217
+  port: 2053
+  uuid: c0dd6d59-1573-43af-8b70-1470b2632a6d
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: 9-7u3b6e.wzkija0v0du4yhk6jfyfafml3nh22kne.workers.dev
-  network: ws
-  ws-opts:
-    path: /@Marisa_kristi
-    headers:
-      Host: 9-7u3b6e.wzkija0v0du4yhk6jfyfafml3nh22kne.workers.dev
-- name: 🇨🇭 CH 04 - lyqsp
-  type: vless
-  server: 185.18.250.245
-  port: 443
-  uuid: f77299ea-e13d-417d-8cdc-ce5566dfc94b
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: edu.ruangguru.com.r3xxe.eu.cc
-  network: ws
-  ws-opts:
-    path: /nl-tw
-    headers:
-      Host: edu.ruangguru.com.r3xxe.eu.cc
+  reality-opts:
+    public-key: A49ue7zXSusJZdErPAewg3jqGdUFIO1a9xOunEKJfC0
+  servername: www.apple.com
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
@@ -54,7 +38,6 @@ proxy-groups:
   - 🇨🇭 CH 01 - lyqsp
   - 🇨🇭 CH 02 - lyqsp
   - 🇨🇭 CH 03 - lyqsp
-  - 🇨🇭 CH 04 - lyqsp
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -63,6 +46,5 @@ proxy-groups:
   - 🇨🇭 CH 01 - lyqsp
   - 🇨🇭 CH 02 - lyqsp
   - 🇨🇭 CH 03 - lyqsp
-  - 🇨🇭 CH 04 - lyqsp
 rules:
 - MATCH,PROXIES
