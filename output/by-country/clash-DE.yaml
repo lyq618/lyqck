@@ -6,17 +6,18 @@ log-level: info
 proxies:
 - name: 🇩🇪 德国 (Germany) 01 - lyqsp
   type: vless
-  server: 57.129.41.216
-  port: 80
-  uuid: 7d74eae4-8a06-4306-a923-ad686f30bf26
+  server: 91.107.188.129
+  port: 2083
+  uuid: 36592d47-b9f5-4e8f-949e-45ac05472aab
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
+  servername: site.check-looks.space
   network: ws
   ws-opts:
-    path: /vless/
+    path: /
     headers:
-      Host: OV-Germany1.09vpn.com
+      Host: 91.107.188.129
 - name: 🇩🇪 德国 (Germany) 02 - lyqsp
   type: vless
   server: 91.107.247.173
@@ -30,22 +31,36 @@ proxies:
   ws-opts:
     path: /
     headers:
-      Host: 91.107.247.173
+      Host: sino.bestsellers1.site
 - name: 🇩🇪 德国 (Germany) 03 - lyqsp
-  type: ss
-  server: 185.226.172.8
-  port: 8008
-  cipher: aes-256-gcm
-  password: XKFKl2rULjIp74
-  udp: true
-- name: 🇩🇪 德国 (Germany) 04 - lyqsp
   type: ss
   server: 185.176.204.18
   port: 19999
   cipher: aes-256-gcm
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
   udp: true
+- name: 🇩🇪 德国 (Germany) 04 - lyqsp
+  type: ss
+  server: 185.226.172.8
+  port: 8008
+  cipher: aes-256-gcm
+  password: XKFKl2rULjIp74
+  udp: true
 - name: 🇩🇪 德国 (Germany) 05 - lyqsp
+  type: ss
+  server: 213.202.208.199
+  port: 5000
+  cipher: aes-256-gcm
+  password: Y6R9pAtvxxzmGC
+  udp: true
+- name: 🇩🇪 德国 (Germany) 06 - lyqsp
+  type: ss
+  server: 185.176.204.18
+  port: 19999
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  udp: true
+- name: 🇩🇪 德国 (Germany) 07 - lyqsp
   type: vless
   server: 91.107.247.173
   port: 2083
@@ -58,37 +73,28 @@ proxies:
   ws-opts:
     path: /
     headers:
-      Host: sino.bestsellers1.site
-- name: 🇩🇪 德国 (Germany) 06 - lyqsp
+      Host: 91.107.247.173
+- name: 🇩🇪 德国 (Germany) 08 - lyqsp
   type: ss
   server: 185.226.172.8
   port: 8008
   cipher: aes-256-gcm
   password: XKFKl2rULjIp74
   udp: true
-- name: 🇩🇪 德国 (Germany) 07 - lyqsp
+- name: 🇩🇪 德国 (Germany) 09 - lyqsp
   type: vless
-  server: connect.hondamotor.site
-  port: 10002
-  uuid: c6362720-0931-4b91-b187-d8ecf3149734
+  server: 57.129.41.216
+  port: 80
+  uuid: 7d74eae4-8a06-4306-a923-ad686f30bf26
   udp: true
   tls: false
   skip-cert-verify: true
-- name: 🇩🇪 德国 (Germany) 08 - lyqsp
-  type: vless
-  server: 91.107.188.129
-  port: 2083
-  uuid: 36592d47-b9f5-4e8f-949e-45ac05472aab
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: site.check-looks.space
   network: ws
   ws-opts:
-    path: /
+    path: /vless/
     headers:
-      Host: 91.107.188.129
-- name: 🇩🇪 德国 (Germany) 09 - lyqsp
+      Host: OV-Germany1.09vpn.com
+- name: 🇩🇪 德国 (Germany) 10 - lyqsp
   type: vmess
   server: 45.131.153.149
   port: 443
@@ -99,21 +105,7 @@ proxies:
   tls: true
   skip-cert-verify: true
   servername: de.zhou-yufan.com
-- name: 🇩🇪 德国 (Germany) 10 - lyqsp
-  type: ss
-  server: 213.202.208.199
-  port: 5000
-  cipher: aes-256-gcm
-  password: Y6R9pAtvxxzmGC
-  udp: true
 - name: 🇩🇪 德国 (Germany) 11 - lyqsp
-  type: ss
-  server: 31.76.11.83
-  port: 15731
-  cipher: chacha20-ietf-poly1305
-  password: xAYXtB+XMdfWWOlmL8PWcOZEPfKHKVv7NcTY6jpcL/A=
-  udp: true
-- name: 🇩🇪 德国 (Germany) 12 - lyqsp
   type: vless
   server: test.wecantos.site
   port: 20000
@@ -137,7 +129,6 @@ proxy-groups:
   - 🇩🇪 德国 (Germany) 09 - lyqsp
   - 🇩🇪 德国 (Germany) 10 - lyqsp
   - 🇩🇪 德国 (Germany) 11 - lyqsp
-  - 🇩🇪 德国 (Germany) 12 - lyqsp
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -154,6 +145,5 @@ proxy-groups:
   - 🇩🇪 德国 (Germany) 09 - lyqsp
   - 🇩🇪 德国 (Germany) 10 - lyqsp
   - 🇩🇪 德国 (Germany) 11 - lyqsp
-  - 🇩🇪 德国 (Germany) 12 - lyqsp
 rules:
 - MATCH,PROXIES
