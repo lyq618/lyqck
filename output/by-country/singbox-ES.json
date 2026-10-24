@@ -6,18 +6,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇪🇸 西班牙 (Spain) 01 - lyqsp",
-        "🇪🇸 西班牙 (Spain) 02 - lyqsp",
-        "🇪🇸 西班牙 (Spain) 03 - lyqsp"
+        "🇪🇸 西班牙 (Spain) 01 - lyqsp"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇪🇸 西班牙 (Spain) 01 - lyqsp",
-        "🇪🇸 西班牙 (Spain) 02 - lyqsp",
-        "🇪🇸 西班牙 (Spain) 03 - lyqsp"
+        "🇪🇸 西班牙 (Spain) 01 - lyqsp"
       ],
       "url": "https://www.google.com/generate_204"
     },
