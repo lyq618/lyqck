@@ -7,7 +7,9 @@
       "outbounds": [
         "auto",
         "🇨🇳 CN 01 - lyqsp",
-        "🇨🇳 CN 02 - lyqsp"
+        "🇨🇳 CN 02 - lyqsp",
+        "🇨🇳 CN 03 - lyqsp",
+        "🇨🇳 CN 04 - lyqsp"
       ]
     },
     {
@@ -15,7 +17,9 @@
       "tag": "auto",
       "outbounds": [
         "🇨🇳 CN 01 - lyqsp",
-        "🇨🇳 CN 02 - lyqsp"
+        "🇨🇳 CN 02 - lyqsp",
+        "🇨🇳 CN 03 - lyqsp",
+        "🇨🇳 CN 04 - lyqsp"
       ],
       "url": "https://www.google.com/generate_204"
     },
