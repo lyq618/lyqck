@@ -6,16 +6,16 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇨🇿 CZ 01 - lyqsp",
-        "🇨🇿 CZ 02 - lyqsp"
+        "🇮🇷 IR 01 - lyqsp",
+        "🇮🇷 IR 02 - lyqsp"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇨🇿 CZ 01 - lyqsp",
-        "🇨🇿 CZ 02 - lyqsp"
+        "🇮🇷 IR 01 - lyqsp",
+        "🇮🇷 IR 02 - lyqsp"
       ],
       "url": "https://www.google.com/generate_204"
     },
