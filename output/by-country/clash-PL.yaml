@@ -24,9 +24,9 @@ proxies:
   servername: 2.26.6.1
 - name: 🇵🇱 PL 03 - lyqsp
   type: vless
-  server: site.teslamotor.site
-  port: 20001
-  uuid: 8e8210b7-71a4-4799-8b9b-2e69698b1eaf
+  server: edge10.cyrionflare.com
+  port: 2052
+  uuid: 1a8ecc41-6e62-431b-8eca-87c2fa4dc286
   udp: true
   tls: false
   skip-cert-verify: true
@@ -40,13 +40,38 @@ proxies:
   skip-cert-verify: true
 - name: 🇵🇱 PL 05 - lyqsp
   type: vless
+  server: 2.26.6.1
+  port: 2087
+  uuid: b9fdc03f-389b-4cda-9be4-155b623bee15
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: 2.26.6.1
+- name: 🇵🇱 PL 06 - lyqsp
+  type: vless
+  server: 168.222.43.53
+  port: 2052
+  uuid: 1a8ecc41-6e62-431b-8eca-87c2fa4dc286
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇵🇱 PL 07 - lyqsp
+  type: vless
   server: site.teslamotor.site
   port: 20001
   uuid: 8e8210b7-71a4-4799-8b9b-2e69698b1eaf
   udp: true
   tls: false
   skip-cert-verify: true
-- name: 🇵🇱 PL 06 - lyqsp
+- name: 🇵🇱 PL 08 - lyqsp
+  type: vless
+  server: edge10.cyrionflare.com
+  port: 2052
+  uuid: 1a8ecc41-6e62-431b-8eca-87c2fa4dc286
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇵🇱 PL 09 - lyqsp
   type: vless
   server: 2.26.6.1
   port: 2087
@@ -55,7 +80,7 @@ proxies:
   tls: true
   skip-cert-verify: true
   servername: 2.26.6.1
-- name: 🇵🇱 PL 07 - lyqsp
+- name: 🇵🇱 PL 10 - lyqsp
   type: vless
   server: site.teslamotor.site
   port: 20001
@@ -75,6 +100,9 @@ proxy-groups:
   - 🇵🇱 PL 05 - lyqsp
   - 🇵🇱 PL 06 - lyqsp
   - 🇵🇱 PL 07 - lyqsp
+  - 🇵🇱 PL 08 - lyqsp
+  - 🇵🇱 PL 09 - lyqsp
+  - 🇵🇱 PL 10 - lyqsp
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -87,5 +115,8 @@ proxy-groups:
   - 🇵🇱 PL 05 - lyqsp
   - 🇵🇱 PL 06 - lyqsp
   - 🇵🇱 PL 07 - lyqsp
+  - 🇵🇱 PL 08 - lyqsp
+  - 🇵🇱 PL 09 - lyqsp
+  - 🇵🇱 PL 10 - lyqsp
 rules:
 - MATCH,PROXIES

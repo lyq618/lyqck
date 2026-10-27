@@ -6,14 +6,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇮🇳 印度 (India) 01 (家宽) - lyqsp"
+        "🇧🇬 BG 01 - lyqsp"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇮🇳 印度 (India) 01 (家宽) - lyqsp"
+        "🇧🇬 BG 01 - lyqsp"
       ],
       "url": "https://www.google.com/generate_204"
     },
