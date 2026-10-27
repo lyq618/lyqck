@@ -6,14 +6,16 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇦🇿 AZ 01 - lyqsp"
+        "🇦🇿 AZ 01 - lyqsp",
+        "🇦🇿 AZ 02 - lyqsp"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇦🇿 AZ 01 - lyqsp"
+        "🇦🇿 AZ 01 - lyqsp",
+        "🇦🇿 AZ 02 - lyqsp"
       ],
       "url": "https://www.google.com/generate_204"
     },
