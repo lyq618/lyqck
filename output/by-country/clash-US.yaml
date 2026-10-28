@@ -5,27 +5,21 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇺🇸 美国 (United States) 01 - lyqsp
-  type: ss
-  server: 37.19.198.244
-  port: 443
-  cipher: aes-128-gcm
-  password: shadowsocks
+  type: vmess
+  server: 23.158.72.131
+  port: 80
+  uuid: 8a9aaa70-ced9-11f1-b934-205c6d5f5d78
+  alterId: 0
+  cipher: auto
   udp: true
-- name: 🇺🇸 美国 (United States) 02 - lyqsp
-  type: vless
-  server: 104.18.1.1
-  port: 2083
-  uuid: a1de0630-5786-48a0-84f6-dc6f2de10d6d
-  udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  servername: vlsovip.1d.mom
   network: ws
   ws-opts:
-    path: /
+    path: ''
     headers:
-      Host: vlsovip.1d.mom
-- name: 🇺🇸 美国 (United States) 03 - lyqsp
+      Host: ''
+- name: 🇺🇸 美国 (United States) 02 - lyqsp
   type: vmess
   server: 84.17.41.2
   port: 18000
@@ -35,9 +29,9 @@ proxies:
   udp: true
   tls: false
   skip-cert-verify: true
-- name: 🇺🇸 美国 (United States) 04 - lyqsp
+- name: 🇺🇸 美国 (United States) 03 - lyqsp
   type: vmess
-  server: 169.197.142.22
+  server: 67.220.95.3
   port: 18000
   uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
   alterId: 0
@@ -45,49 +39,7 @@ proxies:
   udp: true
   tls: false
   skip-cert-verify: true
-- name: 🇺🇸 美国 (United States) 05 - lyqsp
-  type: vless
-  server: 8.39.125.213
-  port: 443
-  uuid: 099244b9-2168-4dbd-870e-cbbe9d6eb573
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: whitecreeper.pages.dev
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: whitecreeper.pages.dev
-- name: 🇺🇸 美国 (United States) 06 - lyqsp
-  type: vless
-  server: 104.26.12.140
-  port: 8443
-  uuid: 767b6340-96dc-4aa0-8013-a8af7513d920
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: c7dabe95.proxy-978.pages.dev
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: c7dabe95.proxy-978.pages.dev
-- name: 🇺🇸 美国 (United States) 07 - lyqsp
-  type: vless
-  server: 104.24.30.89
-  port: 443
-  uuid: aebe5a70-0ca3-46ce-8208-8b5bab1346ce
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: rAyAn-007.nAsTaRaN.DpDnS.OrG
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: rayan-007.nastaran.dpdns.org
-- name: 🇺🇸 美国 (United States) 08 - lyqsp
+- name: 🇺🇸 美国 (United States) 04 - lyqsp
   type: vmess
   server: 23.158.72.131
   port: 80
@@ -101,47 +53,24 @@ proxies:
   ws-opts:
     path: /870ao26f
     headers:
-      Host: 172.66.0.251
-- name: 🇺🇸 美国 (United States) 09 - lyqsp
-  type: vmess
-  server: 23.158.72.131
-  port: 80
-  uuid: 8a9aaa70-ced9-11f1-b934-205c6d5f5d78
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: us-23.hihu.net
-- name: 🇺🇸 美国 (United States) 10 - lyqsp
-  type: vmess
-  server: us-23.hihu.net
-  port: 80
-  uuid: 8a9aaa70-ced9-11f1-b934-205c6d5f5d78
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: ''
-    headers:
       Host: ''
-- name: 🇺🇸 美国 (United States) 11 - lyqsp
+- name: 🇺🇸 美国 (United States) 05 - lyqsp
   type: ss
-  server: 198.98.53.130
-  port: 443
-  cipher: chacha20-ietf-poly1305
-  password: eDfN7SODQceIOmIAbtJJtK
+  server: 45.86.51.18
+  port: 19999
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
   udp: true
-- name: 🇺🇸 美国 (United States) 12 - lyqsp
+- name: 🇺🇸 美国 (United States) 06 - lyqsp
+  type: ss
+  server: 37.19.198.243
+  port: 443
+  cipher: aes-128-gcm
+  password: shadowsocks
+  udp: true
+- name: 🇺🇸 美国 (United States) 07 - lyqsp
   type: vmess
-  server: 67.220.95.3
+  server: 38.110.1.246
   port: 18000
   uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
   alterId: 0
@@ -149,52 +78,34 @@ proxies:
   udp: true
   tls: false
   skip-cert-verify: true
-- name: 🇺🇸 美国 (United States) 13 - lyqsp
-  type: vless
-  server: 172.66.148.229
-  port: 8443
-  uuid: 767b6340-96dc-4aa0-8013-a8af7513d920
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: c7dabe95.proxy-978.pages.dev
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: c7dabe95.proxy-978.pages.dev
-- name: 🇺🇸 美国 (United States) 14 - lyqsp
+- name: 🇺🇸 美国 (United States) 08 - lyqsp
   type: vmess
-  server: 129.146.77.248
-  port: 39495
-  uuid: f836c736-87fc-4fde-aabc-00857ecdff3e
+  server: 38.110.1.246
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
   alterId: 0
   cipher: auto
   udp: true
   tls: false
   skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /cctv13.m3u8
-    headers:
-      Host: ''
-- name: 🇺🇸 美国 (United States) 15 - lyqsp
-  type: vmess
-  server: rib9jxayoqjgn2kw.v.3dns.vip
+- name: 🇺🇸 美国 (United States) 09 - lyqsp
+  type: ss
+  server: 156.146.38.167
   port: 443
-  uuid: 9b31490d-190e-4ef1-af0a-7ccab3e7c3b5
+  cipher: aes-128-gcm
+  password: shadowsocks
+  udp: true
+- name: 🇺🇸 美国 (United States) 10 - lyqsp
+  type: vmess
+  server: 84.17.41.2
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
   alterId: 0
   cipher: auto
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  servername: ''
-  network: ws
-  ws-opts:
-    path: /ws-vmess
-    headers:
-      Host: ''
-- name: 🇺🇸 美国 (United States) 16 - lyqsp
+- name: 🇺🇸 美国 (United States) 11 - lyqsp
   type: vmess
   server: 67.220.85.46
   port: 18000
@@ -204,343 +115,78 @@ proxies:
   udp: true
   tls: false
   skip-cert-verify: true
+- name: 🇺🇸 美国 (United States) 12 - lyqsp
+  type: vmess
+  server: 67.220.85.46
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇺🇸 美国 (United States) 13 - lyqsp
+  type: vmess
+  server: 67.220.85.46
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇺🇸 美国 (United States) 14 - lyqsp
+  type: vmess
+  server: 67.220.85.46
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇺🇸 美国 (United States) 15 - lyqsp
+  type: vmess
+  server: 38.110.1.246
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇺🇸 美国 (United States) 16 - lyqsp
+  type: vmess
+  server: 129.146.77.248
+  port: 39495
+  uuid: f836c736-87fc-4fde-aabc-00857ecdff3e
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /cctv13.m3u8
+    headers:
+      Host: ''
 - name: 🇺🇸 美国 (United States) 17 - lyqsp
   type: vmess
-  server: 129.146.77.248
-  port: 39495
-  uuid: f836c736-87fc-4fde-aabc-00857ecdff3e
+  server: 172.66.0.1
+  port: 443
+  uuid: 0cf6d970-3f1d-4aae-a989-92a8f76ae3db
   alterId: 0
   cipher: auto
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
+  servername: vmess.lbw666.dpdns.org
   network: ws
   ws-opts:
-    path: /cctv13.m3u8
+    path: /ws
     headers:
-      Host: ''
+      Host: vmess.lbw666.dpdns.org
 - name: 🇺🇸 美国 (United States) 18 - lyqsp
-  type: vmess
-  server: 23.158.72.131
-  port: 80
-  uuid: 8a9aaa70-ced9-11f1-b934-205c6d5f5d78
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: ''
-    headers:
-      Host: ''
-- name: 🇺🇸 美国 (United States) 19 - lyqsp
-  type: ss
-  server: 37.19.198.243
-  port: 443
-  cipher: aes-128-gcm
-  password: shadowsocks
-  udp: true
-- name: 🇺🇸 美国 (United States) 20 - lyqsp
-  type: vmess
-  server: 43.130.35.53
-  port: 10087
-  uuid: 8e93b009-f1af-448a-b8ef-b110849a35f0
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇺🇸 美国 (United States) 21 - lyqsp
-  type: vless
-  server: 172.67.75.194
-  port: 2096
-  uuid: 099244b9-2168-4dbd-870e-cbbe9d6eb573
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: whitecreeper.pages.dev
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: whitecreeper.pages.dev
-- name: 🇺🇸 美国 (United States) 22 - lyqsp
-  type: vmess
-  server: 84.17.41.2
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇺🇸 美国 (United States) 23 - lyqsp
-  type: vmess
-  server: 129.146.77.248
-  port: 39495
-  uuid: f836c736-87fc-4fde-aabc-00857ecdff3e
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /cctv13.m3u8
-    headers:
-      Host: ''
-- name: 🇺🇸 美国 (United States) 24 - lyqsp
-  type: ss
-  server: 37.19.198.243
-  port: 443
-  cipher: aes-128-gcm
-  password: shadowsocks
-  udp: true
-- name: 🇺🇸 美国 (United States) 25 - lyqsp
-  type: ss
-  server: 156.146.38.167
-  port: 443
-  cipher: aes-128-gcm
-  password: shadowsocks
-  udp: true
-- name: 🇺🇸 美国 (United States) 26 - lyqsp
-  type: vmess
-  server: 84.17.41.2
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇺🇸 美国 (United States) 27 - lyqsp
-  type: vmess
-  server: 38.110.1.246
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇺🇸 美国 (United States) 28 - lyqsp
-  type: vmess
-  server: 38.110.1.246
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇺🇸 美国 (United States) 29 - lyqsp
-  type: ss
-  server: 156.146.38.170
-  port: 443
-  cipher: aes-128-gcm
-  password: shadowsocks
-  udp: true
-- name: 🇺🇸 美国 (United States) 30 - lyqsp
-  type: ss
-  server: 156.146.38.169
-  port: 443
-  cipher: aes-128-gcm
-  password: shadowsocks
-  udp: true
-- name: 🇺🇸 美国 (United States) 31 - lyqsp
-  type: ss
-  server: 45.86.51.18
-  port: 19999
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  udp: true
-- name: 🇺🇸 美国 (United States) 32 - lyqsp
-  type: vmess
-  server: 169.197.142.22
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇺🇸 美国 (United States) 33 - lyqsp
-  type: vless
-  server: 172.67.70.92
-  port: 2053
-  uuid: 767b6340-96dc-4aa0-8013-a8af7513d920
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: c7dabe95.proxy-978.pages.dev
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: c7dabe95.proxy-978.pages.dev
-- name: 🇺🇸 美国 (United States) 34 - lyqsp
-  type: vmess
-  server: 172.67.167.78
-  port: 8443
-  uuid: 60441548-b68e-43b2-8191-e3b884be4b3c
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: v2ray1.dozapp.xyz
-  network: ws
-  ws-opts:
-    path: /lMnsZUN4/
-    headers:
-      Host: v2ray1.dozapp.xyz
-- name: 🇺🇸 美国 (United States) 35 - lyqsp
-  type: vless
-  server: 45.138.100.248
-  port: 10443
-  uuid: ae908ff5-f749-402c-af25-e6e9aef4d6bb
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇺🇸 美国 (United States) 36 - lyqsp
-  type: vless
-  server: 104.16.149.244
-  port: 2087
-  uuid: 767b6340-96dc-4aa0-8013-a8af7513d920
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: c7dabe95.proxy-978.pages.dev
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: c7dabe95.proxy-978.pages.dev
-- name: 🇺🇸 美国 (United States) 37 - lyqsp
-  type: vless
-  server: 104.18.27.94
-  port: 443
-  uuid: 767b6340-96dc-4aa0-8013-a8af7513d920
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: c7dabe95.proxy-978.pages.dev
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: c7dabe95.proxy-978.pages.dev
-- name: 🇺🇸 美国 (United States) 38 - lyqsp
-  type: vless
-  server: 208.84.100.209
-  port: 2112
-  uuid: 36c3dcc2-17b6-4478-b8a7-3978e6d5afe9
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: p8pUe3hwND5rhAti-yRQ5qMaIkNdhxOV1K1jpbtJlEQ
-  servername: play.google.com
-  client-fingerprint: firefox
-- name: 🇺🇸 美国 (United States) 39 - lyqsp
-  type: vmess
-  server: 129.146.77.248
-  port: 39495
-  uuid: f836c736-87fc-4fde-aabc-00857ecdff3e
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /cctv13.m3u8
-    headers:
-      Host: ''
-- name: 🇺🇸 美国 (United States) 40 - lyqsp
-  type: vless
-  server: 45.138.100.248
-  port: 10443
-  uuid: ae908ff5-f749-402c-af25-e6e9aef4d6bb
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇺🇸 美国 (United States) 41 - lyqsp
-  type: ss
-  server: 185.230.230.18
-  port: 19999
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  udp: true
-- name: 🇺🇸 美国 (United States) 42 - lyqsp
-  type: ss
-  server: 193.151.163.18
-  port: 19999
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  udp: true
-- name: 🇺🇸 美国 (United States) 43 - lyqsp
-  type: vmess
-  server: us-23.hihu.net
-  port: 80
-  uuid: 8a9aaa70-ced9-11f1-b934-205c6d5f5d78
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: ''
-    headers:
-      Host: 172.66.0.251
-- name: 🇺🇸 美国 (United States) 44 - lyqsp
-  type: ss
-  server: 15.204.233.41
-  port: 8882
-  cipher: aes-256-gcm
-  password: kDWvXYZoTBcGkC4
-  udp: true
-- name: 🇺🇸 美国 (United States) 45 - lyqsp
-  type: vless
-  server: 188.114.97.3
-  port: 2083
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: newwk1.f1w.de5.net
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: newwk1.f1w.de5.net
-- name: 🇺🇸 美国 (United States) 46 - lyqsp
-  type: vmess
-  server: 67.220.95.3
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇺🇸 美国 (United States) 47 - lyqsp
-  type: vless
-  server: 104.18.42.54
-  port: 2083
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: newwk1.f1w.de5.net
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: newwk1.f1w.de5.net
-- name: 🇺🇸 美国 (United States) 48 - lyqsp
   type: vmess
   server: 129.146.77.248
   port: 39495
@@ -555,7 +201,7 @@ proxies:
     path: /cctv13.m3u8
     headers:
       Host: 129.146.77.248
-- name: 🇺🇸 美国 (United States) 49 - lyqsp
+- name: 🇺🇸 美国 (United States) 19 - lyqsp
   type: vmess
   server: 67.220.85.46
   port: 18000
@@ -565,120 +211,21 @@ proxies:
   udp: true
   tls: false
   skip-cert-verify: true
-- name: 🇺🇸 美国 (United States) 50 - lyqsp
+- name: 🇺🇸 美国 (United States) 20 - lyqsp
   type: ss
   server: 37.19.198.160
   port: 443
   cipher: aes-128-gcm
   password: shadowsocks
   udp: true
-- name: 🇺🇸 美国 (United States) 51 - lyqsp
-  type: vmess
-  server: 38.91.107.49
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
+- name: 🇺🇸 美国 (United States) 21 - lyqsp
+  type: ss
+  server: 173.244.56.9
+  port: 443
+  cipher: aes-128-gcm
+  password: shadowsocks
   udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇺🇸 美国 (United States) 52 - lyqsp
-  type: vmess
-  server: 169.197.142.22
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇺🇸 美国 (United States) 53 - lyqsp
-  type: vless
-  server: us007.zestapp778.com
-  port: 18580
-  uuid: e9a8144e-5237-488a-afb1-9ca3d8d54c80
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: us007.zestapp778.com
-- name: 🇺🇸 美国 (United States) 54 - lyqsp
-  type: vmess
-  server: 67.220.95.3
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇺🇸 美国 (United States) 55 - lyqsp
-  type: vmess
-  server: us-23.hihu.net
-  port: 80
-  uuid: 8a9aaa70-ced9-11f1-b934-205c6d5f5d78
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: ''
-    headers:
-      Host: ''
-- name: 🇺🇸 美国 (United States) 56 - lyqsp
-  type: vless
-  server: 38.107.236.166
-  port: 8443
-  uuid: 48572af1-d091-457b-a86e-4a457e99927f
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: 3h-unitedstates3.09vpn.com
-  network: ws
-  ws-opts:
-    path: /vless/
-    headers:
-      Host: 3h-unitedstates3.09vpn.com
-- name: 🇺🇸 美国 (United States) 57 - lyqsp
-  type: vless
-  server: 172.66.44.211
-  port: 2083
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: wk1.f1w.de5.net
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: wk1.f1w.de5.net
-- name: 🇺🇸 美国 (United States) 58 - lyqsp
-  type: vmess
-  server: 38.110.1.246
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇺🇸 美国 (United States) 59 - lyqsp
-  type: vless
-  server: 104.26.4.60
-  port: 2053
-  uuid: 767b6340-96dc-4aa0-8013-a8af7513d920
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: c7dabe95.proxy-978.pages.dev
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: c7dabe95.proxy-978.pages.dev
-- name: 🇺🇸 美国 (United States) 60 - lyqsp
+- name: 🇺🇸 美国 (United States) 22 - lyqsp
   type: vless
   server: 172.66.1.36
   port: 443
@@ -692,32 +239,7 @@ proxies:
     path: /
     headers:
       Host: ccc.010304.xyz
-- name: 🇺🇸 美国 (United States) 61 - lyqsp
-  type: vmess
-  server: 84.17.41.2
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇺🇸 美国 (United States) 62 - lyqsp
-  type: vmess
-  server: us-23.hihu.net
-  port: 80
-  uuid: 8a9aaa70-ced9-11f1-b934-205c6d5f5d78
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: 172.66.0.251
-- name: 🇺🇸 美国 (United States) 63 - lyqsp
+- name: 🇺🇸 美国 (United States) 23 - lyqsp
   type: vmess
   server: 23.158.72.131
   port: 80
@@ -729,269 +251,10 @@ proxies:
   skip-cert-verify: true
   network: ws
   ws-opts:
-    path: ''
+    path: /
     headers:
       Host: ''
-- name: 🇺🇸 美国 (United States) 64 - lyqsp
-  type: vmess
-  server: 169.197.142.22
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇺🇸 美国 (United States) 65 - lyqsp
-  type: vless
-  server: 104.26.13.140
-  port: 8443
-  uuid: 767b6340-96dc-4aa0-8013-a8af7513d920
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: c7dabe95.proxy-978.pages.dev
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: c7dabe95.proxy-978.pages.dev
-- name: 🇺🇸 美国 (United States) 66 - lyqsp
-  type: ss
-  server: 95.215.201.18
-  port: 19999
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  udp: true
-- name: 🇺🇸 美国 (United States) 67 - lyqsp
-  type: ss
-  server: 185.230.230.18
-  port: 19999
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  udp: true
-- name: 🇺🇸 美国 (United States) 68 - lyqsp
-  type: ss
-  server: 193.151.163.18
-  port: 19999
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  udp: true
-- name: 🇺🇸 美国 (United States) 69 - lyqsp
-  type: vmess
-  server: 38.91.107.49
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇺🇸 美国 (United States) 70 - lyqsp
-  type: vless
-  server: 104.18.41.190
-  port: 8443
-  uuid: 767b6340-96dc-4aa0-8013-a8af7513d920
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: c7dabe95.proxy-978.pages.dev
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: c7dabe95.proxy-978.pages.dev
-- name: 🇺🇸 美国 (United States) 71 - lyqsp
-  type: ss
-  server: 37.19.198.160
-  port: 443
-  cipher: aes-128-gcm
-  password: shadowsocks
-  udp: true
-- name: 🇺🇸 美国 (United States) 72 - lyqsp
-  type: ss
-  server: 15.204.246.132
-  port: 7307
-  cipher: aes-256-gcm
-  password: FoOiGlkAA9yPEGP
-  udp: true
-- name: 🇺🇸 美国 (United States) 73 - lyqsp
-  type: vmess
-  server: 43.130.35.53
-  port: 10087
-  uuid: 8e93b009-f1af-448a-b8ef-b110849a35f0
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇺🇸 美国 (United States) 74 - lyqsp
-  type: vmess
-  server: 38.91.107.49
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇺🇸 美国 (United States) 75 - lyqsp
-  type: vmess
-  server: 38.110.1.246
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇺🇸 美国 (United States) 76 - lyqsp
-  type: vmess
-  server: 129.146.77.248
-  port: 39495
-  uuid: f836c736-87fc-4fde-aabc-00857ecdff3e
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /cctv13.m3u8
-    headers:
-      Host: ''
-- name: 🇺🇸 美国 (United States) 77 - lyqsp
-  type: vless
-  server: 104.26.4.57
-  port: 2087
-  uuid: 767b6340-96dc-4aa0-8013-a8af7513d920
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: c7dabe95.proxy-978.pages.dev
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: c7dabe95.proxy-978.pages.dev
-- name: 🇺🇸 美国 (United States) 78 - lyqsp
-  type: vless
-  server: 104.16.148.244
-  port: 2087
-  uuid: 767b6340-96dc-4aa0-8013-a8af7513d920
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: c7dabe95.proxy-978.pages.dev
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: c7dabe95.proxy-978.pages.dev
-- name: 🇺🇸 美国 (United States) 79 - lyqsp
-  type: vmess
-  server: 38.110.1.246
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇺🇸 美国 (United States) 80 - lyqsp
-  type: vmess
-  server: 84.17.41.2
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇺🇸 美国 (United States) 81 - lyqsp
-  type: vmess
-  server: 67.220.85.46
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇺🇸 美国 (United States) 82 - lyqsp
-  type: vless
-  server: 104.20.47.114
-  port: 8443
-  uuid: 767b6340-96dc-4aa0-8013-a8af7513d920
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: c7dabe95.proxy-978.pages.dev
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: c7dabe95.proxy-978.pages.dev
-- name: 🇺🇸 美国 (United States) 83 - lyqsp
-  type: vmess
-  server: 67.220.95.3
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇺🇸 美国 (United States) 84 - lyqsp
-  type: vmess
-  server: 43.130.35.53
-  port: 10087
-  uuid: 8e93b009-f1af-448a-b8ef-b110849a35f0
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇺🇸 美国 (United States) 85 - lyqsp
-  type: vmess
-  server: 67.220.95.3
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇺🇸 美国 (United States) 86 - lyqsp
-  type: ss
-  server: 173.244.56.6
-  port: 443
-  cipher: aes-128-gcm
-  password: shadowsocks
-  udp: true
-- name: 🇺🇸 美国 (United States) 87 - lyqsp
-  type: vmess
-  server: us-23.hihu.net
-  port: 80
-  uuid: 8a9aaa70-ced9-11f1-b934-205c6d5f5d78
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: ''
-    headers:
-      Host: ''
-- name: 🇺🇸 美国 (United States) 88 - lyqsp
-  type: ss
-  server: 37.19.198.236
-  port: 443
-  cipher: aes-128-gcm
-  password: shadowsocks
-  udp: true
-- name: 🇺🇸 美国 (United States) 89 - lyqsp
+- name: 🇺🇸 美国 (United States) 24 - lyqsp
   type: vmess
   server: 47.88.79.34
   port: 443
@@ -1007,143 +270,70 @@ proxies:
     path: /ws-vmess
     headers:
       Host: rib9jxayoqjgn2kw.v.3dns.vip
-- name: 🇺🇸 美国 (United States) 90 - lyqsp
-  type: vless
-  server: 172.67.142.169
-  port: 443
-  uuid: 4c0b7280-76bb-495c-9c8b-f05712ebf805
+- name: 🇺🇸 美国 (United States) 25 - lyqsp
+  type: vmess
+  server: 169.197.142.22
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  servername: youxuanku.kdns.fr
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: youxuanku.kdns.fr
-- name: 🇺🇸 美国 (United States) 91 - lyqsp
-  type: vless
-  server: 8.35.211.188
-  port: 8443
-  uuid: 2b181a3a-c001-4145-845a-5d43a43837d5
+- name: 🇺🇸 美国 (United States) 26 - lyqsp
+  type: vmess
+  server: 169.197.142.22
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  servername: vpn-1fj.pages.dev
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: vpn-1fj.pages.dev
-- name: 🇺🇸 美国 (United States) 92 - lyqsp
-  type: vless
-  server: 104.18.0.1
-  port: 443
-  uuid: 3ccba794-1c6d-48a8-acf2-f5caf0e69d86
+- name: 🇺🇸 美国 (United States) 27 - lyqsp
+  type: vmess
+  server: 169.197.142.22
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  servername: all.speedtest03.ccwu.cc
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: all.speedtest03.ccwu.cc
-- name: 🇺🇸 美国 (United States) 93 - lyqsp
-  type: vless
-  server: 104.18.26.94
-  port: 443
-  uuid: 767b6340-96dc-4aa0-8013-a8af7513d920
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: c7dabe95.proxy-978.pages.dev
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: c7dabe95.proxy-978.pages.dev
-- name: 🇺🇸 美国 (United States) 94 - lyqsp
+- name: 🇺🇸 美国 (United States) 28 - lyqsp
   type: ss
-  server: 156.146.38.170
+  server: 37.19.198.244
   port: 443
   cipher: aes-128-gcm
   password: shadowsocks
   udp: true
-- name: 🇺🇸 美国 (United States) 95 - lyqsp
-  type: vmess
-  server: 38.110.1.246
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇺🇸 美国 (United States) 96 - lyqsp
-  type: vless
-  server: 104.26.4.157
-  port: 2083
-  uuid: 767b6340-96dc-4aa0-8013-a8af7513d920
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: c7dabe95.proxy-978.pages.dev
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: c7dabe95.proxy-978.pages.dev
-- name: 🇺🇸 美国 (United States) 97 - lyqsp
+- name: 🇺🇸 美国 (United States) 29 - lyqsp
   type: ss
-  server: 173.244.56.9
+  server: 37.19.198.236
   port: 443
   cipher: aes-128-gcm
   password: shadowsocks
   udp: true
-- name: 🇺🇸 美国 (United States) 98 - lyqsp
-  type: vmess
-  server: 67.220.85.46
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇺🇸 美国 (United States) 99 - lyqsp
-  type: vmess
-  server: 67.220.95.3
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇺🇸 美国 (United States) 100 - lyqsp
+- name: 🇺🇸 美国 (United States) 30 - lyqsp
   type: vless
-  server: 45.138.100.248
-  port: 10443
-  uuid: ae908ff5-f749-402c-af25-e6e9aef4d6bb
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇺🇸 美国 (United States) 101 - lyqsp
-  type: vless
-  server: 172.64.146.116
+  server: f36f5ft.us4.h1clayd.click
   port: 443
-  uuid: 2bcfbfba-b446-4ad5-93ad-72af9e008f61
+  uuid: 5a519754-a673-4462-83f6-5eb25d2af141
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: support.zoom.us.blackshadow.dpdns.org
-  network: ws
-  ws-opts:
-    path: /44.209.52.7-443
-    headers:
-      Host: support.zoom.us.blackshadow.dpdns.org
-- name: 🇺🇸 美国 (United States) 102 - lyqsp
+  reality-opts:
+    public-key: 5KZVzOFqMgdL47--JzLlg5HmPlAYp-cmQsXxkTXngS0
+  servername: f36f5ft.us4.h1clayd.click
+  client-fingerprint: chrome
+- name: 🇺🇸 美国 (United States) 31 - lyqsp
+  type: ss
+  server: 45.86.51.18
+  port: 19999
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  udp: true
+- name: 🇺🇸 美国 (United States) 32 - lyqsp
   type: vmess
   server: 84.17.41.2
   port: 18000
@@ -1153,25 +343,243 @@ proxies:
   udp: true
   tls: false
   skip-cert-verify: true
-- name: 🇺🇸 美国 (United States) 103 - lyqsp
+- name: 🇺🇸 美国 (United States) 33 - lyqsp
+  type: vmess
+  server: 169.197.142.22
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇺🇸 美国 (United States) 34 - lyqsp
+  type: ss
+  server: 37.19.198.236
+  port: 443
+  cipher: aes-128-gcm
+  password: shadowsocks
+  udp: true
+- name: 🇺🇸 美国 (United States) 35 - lyqsp
+  type: ss
+  server: 193.151.163.18
+  port: 19999
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  udp: true
+- name: 🇺🇸 美国 (United States) 36 - lyqsp
   type: vless
-  server: 104.26.5.57
-  port: 2087
-  uuid: 767b6340-96dc-4aa0-8013-a8af7513d920
+  server: 45.138.100.248
+  port: 10443
+  uuid: ae908ff5-f749-402c-af25-e6e9aef4d6bb
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇺🇸 美国 (United States) 37 - lyqsp
+  type: vmess
+  server: 43.130.35.53
+  port: 10087
+  uuid: 8e93b009-f1af-448a-b8ef-b110849a35f0
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇺🇸 美国 (United States) 38 - lyqsp
+  type: vless
+  server: 45.138.100.248
+  port: 10443
+  uuid: ae908ff5-f749-402c-af25-e6e9aef4d6bb
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇺🇸 美国 (United States) 39 - lyqsp
+  type: vless
+  server: 45.138.100.248
+  port: 10443
+  uuid: ae908ff5-f749-402c-af25-e6e9aef4d6bb
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇺🇸 美国 (United States) 40 - lyqsp
+  type: vless
+  server: 45.138.100.248
+  port: 14430
+  uuid: ae908ff5-f749-402c-af25-e6e9aef4d6bb
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /vless
+    headers:
+      Host: 45.138.100.248
+- name: 🇺🇸 美国 (United States) 41 - lyqsp
+  type: vless
+  server: 45.138.100.248
+  port: 10443
+  uuid: ae908ff5-f749-402c-af25-e6e9aef4d6bb
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇺🇸 美国 (United States) 42 - lyqsp
+  type: vmess
+  server: 43.130.35.53
+  port: 10087
+  uuid: 8e93b009-f1af-448a-b8ef-b110849a35f0
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇺🇸 美国 (United States) 43 - lyqsp
+  type: vmess
+  server: 169.197.142.22
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇺🇸 美国 (United States) 44 - lyqsp
+  type: vless
+  server: 45.138.100.248
+  port: 10443
+  uuid: ae908ff5-f749-402c-af25-e6e9aef4d6bb
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇺🇸 美国 (United States) 45 - lyqsp
+  type: vmess
+  server: 67.220.95.3
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇺🇸 美国 (United States) 46 - lyqsp
+  type: vmess
+  server: 38.110.1.246
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇺🇸 美国 (United States) 47 - lyqsp
+  type: ss
+  server: 37.19.198.244
+  port: 443
+  cipher: aes-128-gcm
+  password: shadowsocks
+  udp: true
+- name: 🇺🇸 美国 (United States) 48 - lyqsp
+  type: vmess
+  server: 38.91.107.49
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇺🇸 美国 (United States) 49 - lyqsp
+  type: ss
+  server: 173.244.56.6
+  port: 443
+  cipher: aes-128-gcm
+  password: shadowsocks
+  udp: true
+- name: 🇺🇸 美国 (United States) 50 - lyqsp
+  type: vmess
+  server: 38.110.1.246
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇺🇸 美国 (United States) 51 - lyqsp
+  type: ss
+  server: 156.146.38.168
+  port: 443
+  cipher: aes-128-gcm
+  password: shadowsocks
+  udp: true
+- name: 🇺🇸 美国 (United States) 52 - lyqsp
+  type: vless
+  server: 172.66.1.36
+  port: 443
+  uuid: d342d11e-d224-4463-b982-532309285094
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: c7dabe95.proxy-978.pages.dev
+  servername: ccc.010304.xyz
   network: ws
   ws-opts:
     path: /
     headers:
-      Host: c7dabe95.proxy-978.pages.dev
-- name: 🇺🇸 美国 (United States) 104 - lyqsp
+      Host: ccc.010304.xyz
+- name: 🇺🇸 美国 (United States) 53 - lyqsp
   type: vmess
-  server: us-23.hihu.net
-  port: 80
-  uuid: 8a9aaa70-ced9-11f1-b934-205c6d5f5d78
+  server: 38.91.107.49
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇺🇸 美国 (United States) 54 - lyqsp
+  type: vmess
+  server: 43.130.35.53
+  port: 10087
+  uuid: 8e93b009-f1af-448a-b8ef-b110849a35f0
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇺🇸 美国 (United States) 55 - lyqsp
+  type: vmess
+  server: 38.110.1.246
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇺🇸 美国 (United States) 56 - lyqsp
+  type: vmess
+  server: 84.17.41.2
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇺🇸 美国 (United States) 57 - lyqsp
+  type: vmess
+  server: 67.220.85.46
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇺🇸 美国 (United States) 58 - lyqsp
+  type: vmess
+  server: 129.146.77.248
+  port: 39495
+  uuid: f836c736-87fc-4fde-aabc-00857ecdff3e
   alterId: 0
   cipher: auto
   udp: true
@@ -1179,10 +587,310 @@ proxies:
   skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /870ao26f
+    path: /cctv13.m3u8
     headers:
       Host: ''
-- name: 🇺🇸 美国 (United States) 105 - lyqsp
+- name: 🇺🇸 美国 (United States) 59 - lyqsp
+  type: vless
+  server: us007.zestapp778.com
+  port: 18580
+  uuid: e9a8144e-5237-488a-afb1-9ca3d8d54c80
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: us007.zestapp778.com
+- name: 🇺🇸 美国 (United States) 60 - lyqsp
+  type: vless
+  server: 216.24.57.225
+  port: 2083
+  uuid: 3bcbd7ef-e05b-4745-a1de-5ecf98dd2fb6
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: pol.netvia.ir
+  network: ws
+  ws-opts:
+    path: /wss
+    headers:
+      Host: pol.netvia.ir
+- name: 🇺🇸 美国 (United States) 61 - lyqsp
+  type: vmess
+  server: 67.220.85.46
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇺🇸 美国 (United States) 62 - lyqsp
+  type: vmess
+  server: 38.91.107.49
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇺🇸 美国 (United States) 63 - lyqsp
+  type: vless
+  server: 45.138.100.248
+  port: 14430
+  uuid: ae908ff5-f749-402c-af25-e6e9aef4d6bb
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /vless
+    headers:
+      Host: 45.138.100.248
+- name: 🇺🇸 美国 (United States) 64 - lyqsp
+  type: vmess
+  server: 84.17.41.2
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇺🇸 美国 (United States) 65 - lyqsp
+  type: vmess
+  server: 129.146.77.248
+  port: 39495
+  uuid: f836c736-87fc-4fde-aabc-00857ecdff3e
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /cctv13.m3u8
+    headers:
+      Host: ''
+- name: 🇺🇸 美国 (United States) 66 - lyqsp
+  type: vmess
+  server: 84.17.41.2
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇺🇸 美国 (United States) 67 - lyqsp
+  type: vmess
+  server: 38.91.107.49
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇺🇸 美国 (United States) 68 - lyqsp
+  type: vmess
+  server: 84.17.41.2
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇺🇸 美国 (United States) 69 - lyqsp
+  type: vmess
+  server: 38.91.107.49
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇺🇸 美国 (United States) 70 - lyqsp
+  type: vmess
+  server: 169.197.142.22
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇺🇸 美国 (United States) 71 - lyqsp
+  type: ss
+  server: 95.215.201.18
+  port: 19999
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  udp: true
+- name: 🇺🇸 美国 (United States) 72 - lyqsp
+  type: vmess
+  server: 169.197.142.22
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇺🇸 美国 (United States) 73 - lyqsp
+  type: ss
+  server: 15.204.233.41
+  port: 8882
+  cipher: aes-256-gcm
+  password: kDWvXYZoTBcGkC4
+  udp: true
+- name: 🇺🇸 美国 (United States) 74 - lyqsp
+  type: vmess
+  server: 38.91.107.49
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇺🇸 美国 (United States) 75 - lyqsp
+  type: vless
+  server: 172.66.0.162
+  port: 443
+  uuid: d342d11e-d224-4463-b982-532309285094
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ccc.010304.xyz
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: ccc.010304.xyz
+- name: 🇺🇸 美国 (United States) 76 - lyqsp
+  type: vless
+  server: 79.182.39.57
+  port: 443
+  uuid: 5a519754-a673-4462-83f6-5eb25d2af141
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: 5KZVzOFqMgdL47--JzLlg5HmPlAYp-cmQsXxkTXngS0
+  servername: f36f5ft.us4.h1clayd.click
+  client-fingerprint: firefox
+- name: 🇺🇸 美国 (United States) 77 - lyqsp
+  type: ss
+  server: 193.151.163.18
+  port: 19999
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  udp: true
+- name: 🇺🇸 美国 (United States) 78 - lyqsp
+  type: ss
+  server: 95.215.201.18
+  port: 19999
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  udp: true
+- name: 🇺🇸 美国 (United States) 79 - lyqsp
+  type: vmess
+  server: 67.220.85.46
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇺🇸 美国 (United States) 80 - lyqsp
+  type: vmess
+  server: 169.197.142.22
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇺🇸 美国 (United States) 81 - lyqsp
+  type: vmess
+  server: 43.130.35.53
+  port: 10087
+  uuid: 8e93b009-f1af-448a-b8ef-b110849a35f0
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇺🇸 美国 (United States) 82 - lyqsp
+  type: ss
+  server: 198.98.53.130
+  port: 443
+  cipher: chacha20-ietf-poly1305
+  password: eDfN7SODQceIOmIAbtJJtK
+  udp: true
+- name: 🇺🇸 美国 (United States) 83 - lyqsp
+  type: vmess
+  server: 84.17.41.2
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇺🇸 美国 (United States) 84 - lyqsp
+  type: ss
+  server: 185.230.230.18
+  port: 19999
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  udp: true
+- name: 🇺🇸 美国 (United States) 85 - lyqsp
+  type: vmess
+  server: 84.17.41.2
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇺🇸 美国 (United States) 86 - lyqsp
+  type: ss
+  server: 156.146.38.168
+  port: 443
+  cipher: aes-128-gcm
+  password: shadowsocks
+  udp: true
+- name: 🇺🇸 美国 (United States) 87 - lyqsp
+  type: ss
+  server: 156.146.38.169
+  port: 443
+  cipher: aes-128-gcm
+  password: shadowsocks
+  udp: true
+- name: 🇺🇸 美国 (United States) 88 - lyqsp
+  type: ss
+  server: 156.146.38.170
+  port: 443
+  cipher: aes-128-gcm
+  password: shadowsocks
+  udp: true
+- name: 🇺🇸 美国 (United States) 89 - lyqsp
+  type: vmess
+  server: 38.91.107.49
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇺🇸 美国 (United States) 90 - lyqsp
   type: vmess
   server: us-23.hihu.net
   port: 80
@@ -1197,9 +905,9 @@ proxies:
     path: /870ao26f
     headers:
       Host: us-23.hihu.net
-- name: 🇺🇸 美国 (United States) 106 - lyqsp
+- name: 🇺🇸 美国 (United States) 91 - lyqsp
   type: vmess
-  server: 67.220.85.46
+  server: 38.91.107.49
   port: 18000
   uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
   alterId: 0
@@ -1207,7 +915,39 @@ proxies:
   udp: true
   tls: false
   skip-cert-verify: true
-- name: 🇺🇸 美国 (United States) 107 - lyqsp
+- name: 🇺🇸 美国 (United States) 92 - lyqsp
+  type: vless
+  server: 216.24.57.225
+  port: 2083
+  uuid: 3bcbd7ef-e05b-4745-a1de-5ecf98dd2fb6
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: pol.netvia.ir
+  network: ws
+  ws-opts:
+    path: /wss
+    headers:
+      Host: pol.netvia.ir
+- name: 🇺🇸 美国 (United States) 93 - lyqsp
+  type: vmess
+  server: 84.17.41.2
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇺🇸 美国 (United States) 94 - lyqsp
+  type: vless
+  server: 45.138.100.248
+  port: 10443
+  uuid: ae908ff5-f749-402c-af25-e6e9aef4d6bb
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇺🇸 美国 (United States) 95 - lyqsp
   type: vmess
   server: 169.197.142.22
   port: 18000
@@ -1217,14 +957,14 @@ proxies:
   udp: true
   tls: false
   skip-cert-verify: true
-- name: 🇺🇸 美国 (United States) 108 - lyqsp
+- name: 🇺🇸 美国 (United States) 96 - lyqsp
   type: ss
   server: 156.146.38.167
   port: 443
   cipher: aes-128-gcm
   password: shadowsocks
   udp: true
-- name: 🇺🇸 美国 (United States) 109 - lyqsp
+- name: 🇺🇸 美国 (United States) 97 - lyqsp
   type: vmess
   server: 38.91.107.49
   port: 18000
@@ -1234,34 +974,80 @@ proxies:
   udp: true
   tls: false
   skip-cert-verify: true
-- name: 🇺🇸 美国 (United States) 110 - lyqsp
+- name: 🇺🇸 美国 (United States) 98 - lyqsp
+  type: vmess
+  server: 169.197.142.22
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇺🇸 美国 (United States) 99 - lyqsp
+  type: vless
+  server: 170.114.46.6
+  port: 8080
+  uuid: 990bf436-f1b9-4e7f-857d-14378acc4ae5
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: free.nadun.store
+- name: 🇺🇸 美国 (United States) 100 - lyqsp
+  type: vless
+  server: 216.24.57.225
+  port: 2083
+  uuid: 3bcbd7ef-e05b-4745-a1de-5ecf98dd2fb6
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: pol.netvia.ir
+  network: ws
+  ws-opts:
+    path: /wss
+    headers:
+      Host: pol.netvia.ir
+- name: 🇺🇸 美国 (United States) 101 - lyqsp
+  type: ss
+  server: 15.204.246.132
+  port: 7307
+  cipher: aes-256-gcm
+  password: FoOiGlkAA9yPEGP
+  udp: true
+- name: 🇺🇸 美国 (United States) 102 - lyqsp
+  type: ss
+  server: 185.230.230.18
+  port: 19999
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  udp: true
+- name: 🇺🇸 美国 (United States) 103 - lyqsp
   type: ss
   server: 156.146.38.169
   port: 443
   cipher: aes-128-gcm
   password: shadowsocks
   udp: true
-- name: 🇺🇸 美国 (United States) 111 - lyqsp
+- name: 🇺🇸 美国 (United States) 104 - lyqsp
   type: vmess
-  server: 43.130.35.53
-  port: 10087
-  uuid: 8e93b009-f1af-448a-b8ef-b110849a35f0
+  server: us-23.hihu.net
+  port: 80
+  uuid: 8a9aaa70-ced9-11f1-b934-205c6d5f5d78
   alterId: 0
   cipher: auto
   udp: true
   tls: false
   skip-cert-verify: true
-- name: 🇺🇸 美国 (United States) 112 - lyqsp
-  type: vmess
-  server: 67.220.85.46
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇺🇸 美国 (United States) 113 - lyqsp
+  network: ws
+  ws-opts:
+    path: ''
+    headers:
+      Host: ''
+- name: 🇺🇸 美国 (United States) 105 - lyqsp
   type: vmess
   server: 84.17.41.2
   port: 18000
@@ -1271,630 +1057,14 @@ proxies:
   udp: true
   tls: false
   skip-cert-verify: true
-- name: 🇺🇸 美国 (United States) 114 - lyqsp
-  type: vless
-  server: 104.17.28.83
-  port: 2087
-  uuid: 099244b9-2168-4dbd-870e-cbbe9d6eb573
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: whitecreeper.pages.dev
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: whitecreeper.pages.dev
-- name: 🇺🇸 美国 (United States) 115 - lyqsp
+- name: 🇺🇸 美国 (United States) 106 - lyqsp
   type: ss
-  server: 156.146.38.168
+  server: 156.146.38.170
   port: 443
   cipher: aes-128-gcm
   password: shadowsocks
   udp: true
-- name: 🇺🇸 美国 (United States) 116 - lyqsp
-  type: vless
-  server: 172.67.75.52
-  port: 2083
-  uuid: 767b6340-96dc-4aa0-8013-a8af7513d920
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: c7dabe95.proxy-978.pages.dev
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: c7dabe95.proxy-978.pages.dev
-- name: 🇺🇸 美国 (United States) 117 - lyqsp
-  type: ss
-  server: 37.19.198.236
-  port: 443
-  cipher: aes-128-gcm
-  password: shadowsocks
-  udp: true
-- name: 🇺🇸 美国 (United States) 118 - lyqsp
-  type: vmess
-  server: 67.220.85.46
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇺🇸 美国 (United States) 119 - lyqsp
-  type: vmess
-  server: 84.17.41.2
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇺🇸 美国 (United States) 120 - lyqsp
-  type: vmess
-  server: 84.17.41.2
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇺🇸 美国 (United States) 121 - lyqsp
-  type: vless
-  server: 172.64.146.66
-  port: 8443
-  uuid: 767b6340-96dc-4aa0-8013-a8af7513d920
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: c7dabe95.proxy-978.pages.dev
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: c7dabe95.proxy-978.pages.dev
-- name: 🇺🇸 美国 (United States) 122 - lyqsp
-  type: vless
-  server: 172.67.161.104
-  port: 443
-  uuid: 767b6340-96dc-4aa0-8013-a8af7513d920
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: c7dabe95.proxy-978.pages.dev
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: c7dabe95.proxy-978.pages.dev
-- name: 🇺🇸 美国 (United States) 123 - lyqsp
-  type: vless
-  server: 104.21.63.28
-  port: 443
-  uuid: 4c0b7280-76bb-495c-9c8b-f05712ebf805
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: youxuanku.kdns.fr
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: youxuanku.kdns.fr
-- name: 🇺🇸 美国 (United States) 124 - lyqsp
-  type: ss
-  server: 45.86.51.18
-  port: 19999
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  udp: true
-- name: 🇺🇸 美国 (United States) 125 - lyqsp
-  type: vless
-  server: 172.64.145.202
-  port: 2083
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: newwk1.f1w.de5.net
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: newwk1.f1w.de5.net
-- name: 🇺🇸 美国 (United States) 126 - lyqsp
-  type: vmess
-  server: 38.91.107.49
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇺🇸 美国 (United States) 127 - lyqsp
-  type: vless
-  server: 188.164.248.81
-  port: 2087
-  uuid: 099244b9-2168-4dbd-870e-cbbe9d6eb573
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: whitecreeper.pages.dev
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: whitecreeper.pages.dev
-- name: 🇺🇸 美国 (United States) 128 - lyqsp
-  type: vless
-  server: 79.182.39.57
-  port: 443
-  uuid: 5a519754-a673-4462-83f6-5eb25d2af141
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: 5KZVzOFqMgdL47--JzLlg5HmPlAYp-cmQsXxkTXngS0
-  servername: f36f5ft.us4.h1clayd.click
-  client-fingerprint: firefox
-- name: 🇺🇸 美国 (United States) 129 - lyqsp
-  type: ss
-  server: 15.204.247.124
-  port: 2375
-  cipher: aes-256-gcm
-  password: faBAoD54k87UJG7
-  udp: true
-- name: 🇺🇸 美国 (United States) 130 - lyqsp
-  type: vless
-  server: 162.159.152.4
-  port: 443
-  uuid: 8d42d29a-ed53-4684-a9ff-6b33826149de
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: aio.eth0.dpdns.org
-  network: ws
-  ws-opts:
-    path: /aioproxybot/94.23.144.99-2053
-    headers:
-      Host: aio.eth0.dpdns.org
-- name: 🇺🇸 美国 (United States) 131 - lyqsp
-  type: vmess
-  server: 38.110.1.246
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇺🇸 美国 (United States) 132 - lyqsp
-  type: ss
-  server: 156.146.38.168
-  port: 443
-  cipher: aes-128-gcm
-  password: shadowsocks
-  udp: true
-- name: 🇺🇸 美国 (United States) 133 - lyqsp
-  type: vless
-  server: 172.67.67.178
-  port: 443
-  uuid: aebe5a70-0ca3-46ce-8208-8b5bab1346ce
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: rAyAn-007.nAsTaRaN.DpDnS.OrG
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: rAyAn-007.nAsTaRaN.DpDnS.OrG
-- name: 🇺🇸 美国 (United States) 134 - lyqsp
-  type: ss
-  server: 37.19.198.244
-  port: 443
-  cipher: aes-128-gcm
-  password: shadowsocks
-  udp: true
-- name: 🇺🇸 美国 (United States) 135 - lyqsp
-  type: vless
-  server: 104.19.50.28
-  port: 443
-  uuid: 2b181a3a-c001-4145-845a-5d43a43837d5
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: vpn-1fj.pages.dev
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: vpn-1fj.pages.dev
-- name: 🇺🇸 美国 (United States) 136 - lyqsp
-  type: vmess
-  server: 67.220.95.3
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇺🇸 美国 (United States) 137 - lyqsp
-  type: vless
-  server: 104.26.5.60
-  port: 2053
-  uuid: 767b6340-96dc-4aa0-8013-a8af7513d920
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: c7dabe95.proxy-978.pages.dev
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: c7dabe95.proxy-978.pages.dev
-- name: 🇺🇸 美国 (United States) 138 - lyqsp
-  type: ss
-  server: 216.9.225.189
-  port: 443
-  cipher: 2022-blake3-aes-256-gcm
-  password: Q2YsIzc5YkchSFjsqUZWrQAFtsSpqf7XxYxkG4+Jbsk=:zT1SecPttPY/XPW6NwjK5Wql+/6zbcGSDJK21Jk8uLo=
-  udp: true
-- name: 🇺🇸 美国 (United States) 139 - lyqsp
-  type: vmess
-  server: 84.17.41.2
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇺🇸 美国 (United States) 140 - lyqsp
-  type: vless
-  server: 172.67.75.194
-  port: 8443
-  uuid: 767b6340-96dc-4aa0-8013-a8af7513d920
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: c7dabe95.proxy-978.pages.dev
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: c7dabe95.proxy-978.pages.dev
-- name: 🇺🇸 美国 (United States) 141 - lyqsp
-  type: vless
-  server: 172.67.71.122
-  port: 2087
-  uuid: 767b6340-96dc-4aa0-8013-a8af7513d920
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: c7dabe95.proxy-978.pages.dev
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: c7dabe95.proxy-978.pages.dev
-- name: 🇺🇸 美国 (United States) 142 - lyqsp
-  type: vless
-  server: 188.164.248.96
-  port: 8443
-  uuid: 099244b9-2168-4dbd-870e-cbbe9d6eb573
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: whitecreeper.pages.dev
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: whitecreeper.pages.dev
-- name: 🇺🇸 美国 (United States) 143 - lyqsp
-  type: vless
-  server: 45.138.100.248
-  port: 14430
-  uuid: ae908ff5-f749-402c-af25-e6e9aef4d6bb
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /vless
-    headers:
-      Host: 45.138.100.248
-- name: 🇺🇸 美国 (United States) 144 - lyqsp
-  type: vless
-  server: 45.138.100.248
-  port: 10443
-  uuid: ae908ff5-f749-402c-af25-e6e9aef4d6bb
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇺🇸 美国 (United States) 145 - lyqsp
-  type: vless
-  server: 45.138.100.248
-  port: 14430
-  uuid: ae908ff5-f749-402c-af25-e6e9aef4d6bb
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /vless
-    headers:
-      Host: 45.138.100.248
-- name: 🇺🇸 美国 (United States) 146 - lyqsp
-  type: vless
-  server: 45.138.100.248
-  port: 14430
-  uuid: ae908ff5-f749-402c-af25-e6e9aef4d6bb
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /vless
-    headers:
-      Host: 45.138.100.248
-- name: 🇺🇸 美国 (United States) 147 - lyqsp
-  type: vless
-  server: 45.138.100.248
-  port: 14430
-  uuid: ae908ff5-f749-402c-af25-e6e9aef4d6bb
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /vless
-    headers:
-      Host: 45.138.100.248
-- name: 🇺🇸 美国 (United States) 148 - lyqsp
-  type: vless
-  server: 45.138.100.248
-  port: 10443
-  uuid: ae908ff5-f749-402c-af25-e6e9aef4d6bb
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇺🇸 美国 (United States) 149 - lyqsp
-  type: vless
-  server: 104.21.90.210
-  port: 443
-  uuid: 767b6340-96dc-4aa0-8013-a8af7513d920
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: c7dabe95.proxy-978.pages.dev
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: c7dabe95.proxy-978.pages.dev
-- name: 🇺🇸 美国 (United States) 150 - lyqsp
-  type: vless
-  server: 172.67.67.178
-  port: 443
-  uuid: aebe5a70-0ca3-46ce-8208-8b5bab1346ce
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: rAyAn-007.nAsTaRaN.DpDnS.OrG
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: rayan-007.nastaran.dpdns.org
-- name: 🇺🇸 美国 (United States) 151 - lyqsp
-  type: vmess
-  server: 38.91.107.49
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇺🇸 美国 (United States) 152 - lyqsp
-  type: vmess
-  server: 67.220.95.3
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇺🇸 美国 (United States) 153 - lyqsp
-  type: vless
-  server: 172.67.65.56
-  port: 2053
-  uuid: 099244b9-2168-4dbd-870e-cbbe9d6eb573
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: whitecreeper.pages.dev
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: whitecreeper.pages.dev
-- name: 🇺🇸 美国 (United States) 154 - lyqsp
-  type: vmess
-  server: 169.197.142.22
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇺🇸 美国 (United States) 155 - lyqsp
-  type: vmess
-  server: 169.197.142.22
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇺🇸 美国 (United States) 156 - lyqsp
-  type: vless
-  server: 162.159.152.205
-  port: 443
-  uuid: c98a16e4-0dc5-42f0-b3db-30f04525c123
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: vless2-8vx.pages.dev
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: vless2-8vx.pages.dev
-- name: 🇺🇸 美国 (United States) 157 - lyqsp
-  type: vless
-  server: 104.26.5.157
-  port: 2083
-  uuid: 767b6340-96dc-4aa0-8013-a8af7513d920
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: c7dabe95.proxy-978.pages.dev
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: c7dabe95.proxy-978.pages.dev
-- name: 🇺🇸 美国 (United States) 158 - lyqsp
-  type: vless
-  server: 172.66.1.36
-  port: 443
-  uuid: d342d11e-d224-4463-b982-532309285094
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ccc.010304.xyz
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: ccc.010304.xyz
-- name: 🇺🇸 美国 (United States) 159 - lyqsp
-  type: vmess
-  server: 38.91.107.49
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇺🇸 美国 (United States) 160 - lyqsp
-  type: vmess
-  server: 38.91.107.49
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇺🇸 美国 (United States) 161 - lyqsp
-  type: ss
-  server: 95.215.201.18
-  port: 19999
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  udp: true
-- name: 🇺🇸 美国 (United States) 162 - lyqsp
-  type: vmess
-  server: 104.17.77.77
-  port: 8443
-  uuid: 60441548-b68e-43b2-8191-e3b884be4b3c
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: v2ray1.dozapp.xyz
-  network: ws
-  ws-opts:
-    path: /lMnsZUN4/
-    headers:
-      Host: v2ray1.dozapp.xyz
-- name: 🇺🇸 美国 (United States) 163 - lyqsp
-  type: vmess
-  server: 169.197.142.22
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇺🇸 美国 (United States) 164 - lyqsp
-  type: vless
-  server: 128.241.25.11
-  port: 30021
-  uuid: 72fbb611-628d-4afa-8198-bda3e38021f9
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: 3t1yvbyla-rj740g.28m7r63dttya6gazmhoo.workers.dev
-  network: ws
-  ws-opts:
-    path: /@Marisa_kristi
-    headers:
-      Host: 3t1yvbyla-rj740g.28m7r63dttya6gazmhoo.workers.dev
-- name: 🇺🇸 美国 (United States) 165 - lyqsp
-  type: vless
-  server: 172.66.47.45
-  port: 2083
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: wk1.f1w.de5.net
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: wk1.f1w.de5.net
-- name: 🇺🇸 美国 (United States) 166 - lyqsp
-  type: vmess
-  server: 38.110.1.246
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇺🇸 美国 (United States) 167 - lyqsp
-  type: vless
-  server: 208.84.100.209
-  port: 8080
-  uuid: 36c3dcc2-17b6-4478-b8a7-3978e6d5afe9
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: 208.84.100.209
-- name: 🇺🇸 美国 (United States) 168 - lyqsp
+- name: 🇺🇸 美国 (United States) 107 - lyqsp
   type: vmess
   server: 23.158.72.131
   port: 80
@@ -1906,10 +1076,32 @@ proxies:
   skip-cert-verify: true
   network: ws
   ws-opts:
+    path: ''
+    headers:
+      Host: ''
+- name: 🇺🇸 美国 (United States) 108 - lyqsp
+  type: ss
+  server: 37.19.198.243
+  port: 443
+  cipher: aes-128-gcm
+  password: shadowsocks
+  udp: true
+- name: 🇺🇸 美国 (United States) 109 - lyqsp
+  type: vmess
+  server: us-23.hihu.net
+  port: 80
+  uuid: 8a9aaa70-ced9-11f1-b934-205c6d5f5d78
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
     path: /870ao26f
     headers:
-      Host: 172.66.0.251
-- name: 🇺🇸 美国 (United States) 169 - lyqsp
+      Host: ''
+- name: 🇺🇸 美国 (United States) 110 - lyqsp
   type: vmess
   server: us-23.hihu.net
   port: 80
@@ -1924,22 +1116,7 @@ proxies:
     path: /
     headers:
       Host: ''
-- name: 🇺🇸 美国 (United States) 170 - lyqsp
-  type: vmess
-  server: 23.158.72.131
-  port: 80
-  uuid: 8a9aaa70-ced9-11f1-b934-205c6d5f5d78
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /870ao26f
-    headers:
-      Host: ''
-- name: 🇺🇸 美国 (United States) 171 - lyqsp
+- name: 🇺🇸 美国 (United States) 111 - lyqsp
   type: vmess
   server: 23.158.72.131
   port: 80
@@ -1954,7 +1131,355 @@ proxies:
     path: /870ao26f
     headers:
       Host: 172.66.0.251
-- name: 🇺🇸 美国 (United States) 172 - lyqsp
+- name: 🇺🇸 美国 (United States) 112 - lyqsp
+  type: vmess
+  server: us-23.hihu.net
+  port: 80
+  uuid: 8a9aaa70-ced9-11f1-b934-205c6d5f5d78
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: ''
+    headers:
+      Host: ''
+- name: 🇺🇸 美国 (United States) 113 - lyqsp
+  type: vmess
+  server: us-23.hihu.net
+  port: 80
+  uuid: 8a9aaa70-ced9-11f1-b934-205c6d5f5d78
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: ''
+    headers:
+      Host: ''
+- name: 🇺🇸 美国 (United States) 114 - lyqsp
+  type: vmess
+  server: us-23.hihu.net
+  port: 80
+  uuid: 8a9aaa70-ced9-11f1-b934-205c6d5f5d78
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: ''
+    headers:
+      Host: ''
+- name: 🇺🇸 美国 (United States) 115 - lyqsp
+  type: vmess
+  server: us-23.hihu.net
+  port: 80
+  uuid: 8a9aaa70-ced9-11f1-b934-205c6d5f5d78
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: ''
+    headers:
+      Host: 172.66.0.251
+- name: 🇺🇸 美国 (United States) 116 - lyqsp
+  type: vmess
+  server: 129.146.77.248
+  port: 39495
+  uuid: f836c736-87fc-4fde-aabc-00857ecdff3e
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /cctv13.m3u8
+    headers:
+      Host: 129.146.77.248
+- name: 🇺🇸 美国 (United States) 117 - lyqsp
+  type: vmess
+  server: 23.158.72.131
+  port: 80
+  uuid: 8a9aaa70-ced9-11f1-b934-205c6d5f5d78
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /870ao26f
+    headers:
+      Host: 172.66.0.251
+- name: 🇺🇸 美国 (United States) 118 - lyqsp
+  type: vmess
+  server: 23.158.72.131
+  port: 80
+  uuid: 8a9aaa70-ced9-11f1-b934-205c6d5f5d78
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: ''
+    headers:
+      Host: ''
+- name: 🇺🇸 美国 (United States) 119 - lyqsp
+  type: vmess
+  server: us-23.hihu.net
+  port: 80
+  uuid: 8a9aaa70-ced9-11f1-b934-205c6d5f5d78
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: 172.66.0.251
+- name: 🇺🇸 美国 (United States) 120 - lyqsp
+  type: vmess
+  server: 38.91.107.49
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇺🇸 美国 (United States) 121 - lyqsp
+  type: vmess
+  server: 67.220.95.3
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇺🇸 美国 (United States) 122 - lyqsp
+  type: vmess
+  server: 23.158.72.131
+  port: 80
+  uuid: 8a9aaa70-ced9-11f1-b934-205c6d5f5d78
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: us-23.hihu.net
+- name: 🇺🇸 美国 (United States) 123 - lyqsp
+  type: vless
+  server: 45.138.100.248
+  port: 14430
+  uuid: ae908ff5-f749-402c-af25-e6e9aef4d6bb
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /vless
+    headers:
+      Host: 45.138.100.248
+- name: 🇺🇸 美国 (United States) 124 - lyqsp
+  type: vless
+  server: 45.138.100.248
+  port: 14430
+  uuid: ae908ff5-f749-402c-af25-e6e9aef4d6bb
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /vless
+    headers:
+      Host: 45.138.100.248
+- name: 🇺🇸 美国 (United States) 125 - lyqsp
+  type: vless
+  server: 199.232.239.239
+  port: 443
+  uuid: 36805edb-1e85-4199-a59f-117010b70017
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: firefox.com
+  network: ws
+  ws-opts:
+    path: /@CloudVPNchannel/@CloudVPNchannel/@CloudVPNchannel/@CloudVPNchannel/@CloudVPNchannel/@CloudVPNchannel?ed=2056
+    headers:
+      Host: mpkoe7ypcibr80p102020123.global.ssl.fastly.net
+- name: 🇺🇸 美国 (United States) 126 - lyqsp
+  type: vmess
+  server: 38.110.1.246
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇺🇸 美国 (United States) 127 - lyqsp
+  type: ss
+  server: dns3.m3hrzd.ir
+  port: 8044
+  cipher: chacha20-ietf-poly1305
+  password: U5Jk0BhRNKjb5wQBBOXx2wwkWZ_yWU0N
+  udp: true
+- name: 🇺🇸 美国 (United States) 128 - lyqsp
+  type: vmess
+  server: 129.146.77.248
+  port: 39495
+  uuid: f836c736-87fc-4fde-aabc-00857ecdff3e
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /cctv13.m3u8
+    headers:
+      Host: ''
+- name: 🇺🇸 美国 (United States) 129 - lyqsp
+  type: vmess
+  server: 67.220.85.46
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇺🇸 美国 (United States) 130 - lyqsp
+  type: vmess
+  server: 129.146.77.248
+  port: 39495
+  uuid: f836c736-87fc-4fde-aabc-00857ecdff3e
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /cctv13.m3u8
+    headers:
+      Host: ''
+- name: 🇺🇸 美国 (United States) 131 - lyqsp
+  type: ss
+  server: 37.19.198.160
+  port: 443
+  cipher: aes-128-gcm
+  password: shadowsocks
+  udp: true
+- name: 🇺🇸 美国 (United States) 132 - lyqsp
+  type: vless
+  server: 208.84.100.209
+  port: 2112
+  uuid: 36c3dcc2-17b6-4478-b8a7-3978e6d5afe9
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: p8pUe3hwND5rhAti-yRQ5qMaIkNdhxOV1K1jpbtJlEQ
+  servername: play.google.com
+  client-fingerprint: firefox
+- name: 🇺🇸 美国 (United States) 133 - lyqsp
+  type: vmess
+  server: 67.220.95.3
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇺🇸 美国 (United States) 134 - lyqsp
+  type: ss
+  server: 15.204.247.124
+  port: 2375
+  cipher: aes-256-gcm
+  password: faBAoD54k87UJG7
+  udp: true
+- name: 🇺🇸 美国 (United States) 135 - lyqsp
+  type: vmess
+  server: 23.158.72.131
+  port: 80
+  uuid: 8a9aaa70-ced9-11f1-b934-205c6d5f5d78
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /870ao26f
+    headers:
+      Host: 172.66.0.251
+- name: 🇺🇸 美国 (United States) 136 - lyqsp
+  type: vmess
+  server: 67.220.85.46
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇺🇸 美国 (United States) 137 - lyqsp
+  type: vless
+  server: 208.84.100.209
+  port: 8080
+  uuid: 36c3dcc2-17b6-4478-b8a7-3978e6d5afe9
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: 208.84.100.209
+- name: 🇺🇸 美国 (United States) 138 - lyqsp
+  type: vmess
+  server: 23.158.72.131
+  port: 80
+  uuid: 8a9aaa70-ced9-11f1-b934-205c6d5f5d78
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: ''
+    headers:
+      Host: ''
+- name: 🇺🇸 美国 (United States) 139 - lyqsp
+  type: ss
+  server: 193.151.160.18
+  port: 19999
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  udp: true
+- name: 🇺🇸 美国 (United States) 140 - lyqsp
   type: ss
   server: 193.151.160.9
   port: 19999
@@ -2106,38 +1631,6 @@ proxy-groups:
   - 🇺🇸 美国 (United States) 138 - lyqsp
   - 🇺🇸 美国 (United States) 139 - lyqsp
   - 🇺🇸 美国 (United States) 140 - lyqsp
-  - 🇺🇸 美国 (United States) 141 - lyqsp
-  - 🇺🇸 美国 (United States) 142 - lyqsp
-  - 🇺🇸 美国 (United States) 143 - lyqsp
-  - 🇺🇸 美国 (United States) 144 - lyqsp
-  - 🇺🇸 美国 (United States) 145 - lyqsp
-  - 🇺🇸 美国 (United States) 146 - lyqsp
-  - 🇺🇸 美国 (United States) 147 - lyqsp
-  - 🇺🇸 美国 (United States) 148 - lyqsp
-  - 🇺🇸 美国 (United States) 149 - lyqsp
-  - 🇺🇸 美国 (United States) 150 - lyqsp
-  - 🇺🇸 美国 (United States) 151 - lyqsp
-  - 🇺🇸 美国 (United States) 152 - lyqsp
-  - 🇺🇸 美国 (United States) 153 - lyqsp
-  - 🇺🇸 美国 (United States) 154 - lyqsp
-  - 🇺🇸 美国 (United States) 155 - lyqsp
-  - 🇺🇸 美国 (United States) 156 - lyqsp
-  - 🇺🇸 美国 (United States) 157 - lyqsp
-  - 🇺🇸 美国 (United States) 158 - lyqsp
-  - 🇺🇸 美国 (United States) 159 - lyqsp
-  - 🇺🇸 美国 (United States) 160 - lyqsp
-  - 🇺🇸 美国 (United States) 161 - lyqsp
-  - 🇺🇸 美国 (United States) 162 - lyqsp
-  - 🇺🇸 美国 (United States) 163 - lyqsp
-  - 🇺🇸 美国 (United States) 164 - lyqsp
-  - 🇺🇸 美国 (United States) 165 - lyqsp
-  - 🇺🇸 美国 (United States) 166 - lyqsp
-  - 🇺🇸 美国 (United States) 167 - lyqsp
-  - 🇺🇸 美国 (United States) 168 - lyqsp
-  - 🇺🇸 美国 (United States) 169 - lyqsp
-  - 🇺🇸 美国 (United States) 170 - lyqsp
-  - 🇺🇸 美国 (United States) 171 - lyqsp
-  - 🇺🇸 美国 (United States) 172 - lyqsp
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -2283,37 +1776,5 @@ proxy-groups:
   - 🇺🇸 美国 (United States) 138 - lyqsp
   - 🇺🇸 美国 (United States) 139 - lyqsp
   - 🇺🇸 美国 (United States) 140 - lyqsp
-  - 🇺🇸 美国 (United States) 141 - lyqsp
-  - 🇺🇸 美国 (United States) 142 - lyqsp
-  - 🇺🇸 美国 (United States) 143 - lyqsp
-  - 🇺🇸 美国 (United States) 144 - lyqsp
-  - 🇺🇸 美国 (United States) 145 - lyqsp
-  - 🇺🇸 美国 (United States) 146 - lyqsp
-  - 🇺🇸 美国 (United States) 147 - lyqsp
-  - 🇺🇸 美国 (United States) 148 - lyqsp
-  - 🇺🇸 美国 (United States) 149 - lyqsp
-  - 🇺🇸 美国 (United States) 150 - lyqsp
-  - 🇺🇸 美国 (United States) 151 - lyqsp
-  - 🇺🇸 美国 (United States) 152 - lyqsp
-  - 🇺🇸 美国 (United States) 153 - lyqsp
-  - 🇺🇸 美国 (United States) 154 - lyqsp
-  - 🇺🇸 美国 (United States) 155 - lyqsp
-  - 🇺🇸 美国 (United States) 156 - lyqsp
-  - 🇺🇸 美国 (United States) 157 - lyqsp
-  - 🇺🇸 美国 (United States) 158 - lyqsp
-  - 🇺🇸 美国 (United States) 159 - lyqsp
-  - 🇺🇸 美国 (United States) 160 - lyqsp
-  - 🇺🇸 美国 (United States) 161 - lyqsp
-  - 🇺🇸 美国 (United States) 162 - lyqsp
-  - 🇺🇸 美国 (United States) 163 - lyqsp
-  - 🇺🇸 美国 (United States) 164 - lyqsp
-  - 🇺🇸 美国 (United States) 165 - lyqsp
-  - 🇺🇸 美国 (United States) 166 - lyqsp
-  - 🇺🇸 美国 (United States) 167 - lyqsp
-  - 🇺🇸 美国 (United States) 168 - lyqsp
-  - 🇺🇸 美国 (United States) 169 - lyqsp
-  - 🇺🇸 美国 (United States) 170 - lyqsp
-  - 🇺🇸 美国 (United States) 171 - lyqsp
-  - 🇺🇸 美国 (United States) 172 - lyqsp
 rules:
 - MATCH,PROXIES
