@@ -6,60 +6,6 @@ log-level: info
 proxies:
 - name: 🇮🇩 ID 01 - lyqsp
   type: vless
-  server: in001.zestapp778.com
-  port: 57353
-  uuid: e9a8144e-5237-488a-afb1-9ca3d8d54c80
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: in001.zestapp778.com
-- name: 🇮🇩 ID 02 - lyqsp
-  type: vless
-  server: 130.94.95.198
-  port: 57353
-  uuid: e9a8144e-5237-488a-afb1-9ca3d8d54c80
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: in001.zestapp778.com
-- name: 🇮🇩 ID 03 - lyqsp
-  type: vless
-  server: in001.zestapp778.com
-  port: 57353
-  uuid: e9a8144e-5237-488a-afb1-9ca3d8d54c80
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: in001.zestapp778.com
-- name: 🇮🇩 ID 04 - lyqsp
-  type: vless
-  server: 130.94.95.198
-  port: 57353
-  uuid: e9a8144e-5237-488a-afb1-9ca3d8d54c80
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: in001.zestapp778.com
-- name: 🇮🇩 ID 05 - lyqsp
-  type: vless
-  server: 130.94.95.198
-  port: 57353
-  uuid: e9a8144e-5237-488a-afb1-9ca3d8d54c80
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: in001.zestapp778.com
-- name: 🇮🇩 ID 06 - lyqsp
-  type: vless
-  server: 130.94.95.198
-  port: 57353
-  uuid: e9a8144e-5237-488a-afb1-9ca3d8d54c80
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: in001.zestapp778.com
-- name: 🇮🇩 ID 07 - lyqsp
-  type: vless
   server: 130.94.95.198
   port: 57353
   uuid: e9a8144e-5237-488a-afb1-9ca3d8d54c80
@@ -73,23 +19,11 @@ proxy-groups:
   proxies:
   - AUTO
   - 🇮🇩 ID 01 - lyqsp
-  - 🇮🇩 ID 02 - lyqsp
-  - 🇮🇩 ID 03 - lyqsp
-  - 🇮🇩 ID 04 - lyqsp
-  - 🇮🇩 ID 05 - lyqsp
-  - 🇮🇩 ID 06 - lyqsp
-  - 🇮🇩 ID 07 - lyqsp
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
   - 🇮🇩 ID 01 - lyqsp
-  - 🇮🇩 ID 02 - lyqsp
-  - 🇮🇩 ID 03 - lyqsp
-  - 🇮🇩 ID 04 - lyqsp
-  - 🇮🇩 ID 05 - lyqsp
-  - 🇮🇩 ID 06 - lyqsp
-  - 🇮🇩 ID 07 - lyqsp
 rules:
 - MATCH,PROXIES

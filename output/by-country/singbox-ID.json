@@ -6,26 +6,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇮🇩 ID 01 - lyqsp",
-        "🇮🇩 ID 02 - lyqsp",
-        "🇮🇩 ID 03 - lyqsp",
-        "🇮🇩 ID 04 - lyqsp",
-        "🇮🇩 ID 05 - lyqsp",
-        "🇮🇩 ID 06 - lyqsp",
-        "🇮🇩 ID 07 - lyqsp"
+        "🇮🇩 ID 01 - lyqsp"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇮🇩 ID 01 - lyqsp",
-        "🇮🇩 ID 02 - lyqsp",
-        "🇮🇩 ID 03 - lyqsp",
-        "🇮🇩 ID 04 - lyqsp",
-        "🇮🇩 ID 05 - lyqsp",
-        "🇮🇩 ID 06 - lyqsp",
-        "🇮🇩 ID 07 - lyqsp"
+        "🇮🇩 ID 01 - lyqsp"
       ],
       "url": "https://www.google.com/generate_204"
     },
