@@ -1,0 +1,39 @@
+{
+  "version": 1,
+  "outbounds": [
+    {
+      "type": "selector",
+      "tag": "select",
+      "outbounds": [
+        "auto",
+        "🇨🇳 CN 01 - lyqsp",
+        "🇨🇳 CN 02 - lyqsp",
+        "🇨🇳 CN 03 - lyqsp",
+        "🇨🇳 CN 04 - lyqsp",
+        "🇨🇳 CN 05 - lyqsp",
+        "🇨🇳 CN 06 - lyqsp"
+      ]
+    },
+    {
+      "type": "urltest",
+      "tag": "auto",
+      "outbounds": [
+        "🇨🇳 CN 01 - lyqsp",
+        "🇨🇳 CN 02 - lyqsp",
+        "🇨🇳 CN 03 - lyqsp",
+        "🇨🇳 CN 04 - lyqsp",
+        "🇨🇳 CN 05 - lyqsp",
+        "🇨🇳 CN 06 - lyqsp"
+      ],
+      "url": "https://www.google.com/generate_204"
+    },
+    {
+      "type": "direct",
+      "tag": "direct"
+    },
+    {
+      "type": "block",
+      "tag": "block"
+    }
+  ]
+}
