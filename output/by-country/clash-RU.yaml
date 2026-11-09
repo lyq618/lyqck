@@ -19,6 +19,34 @@ proxies:
   password: yZiPrr484OdSYcivDUv+UIygwvyW+HQYytKsIgTw9tU=
   udp: true
 - name: 🇷🇺 俄罗斯 (Russia) 03 - lyqsp
+  type: vless
+  server: 185.86.147.175
+  port: 443
+  uuid: 7955bf18-35c4-412d-aabd-c0b36c793063
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: bhjolq0d0l.flowersgood.top
+  network: ws
+  ws-opts:
+    path: /service/telemetry/045d381f1166/
+    headers:
+      Host: bhjolq0d0l.flowersgood.top
+- name: 🇷🇺 俄罗斯 (Russia) 04 - lyqsp
+  type: vless
+  server: 185.86.147.175
+  port: 443
+  uuid: 7955bf18-35c4-412d-aabd-c0b36c793063
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: bhjolq0d0l.flowersgood.top
+  network: ws
+  ws-opts:
+    path: /service/telemetry/045d381f1166/
+    headers:
+      Host: bhjolq0d0l.flowersgood.top
+- name: 🇷🇺 俄罗斯 (Russia) 05 - lyqsp
   type: ss
   server: 46.17.47.58
   port: 18443
@@ -33,6 +61,8 @@ proxy-groups:
   - 🇷🇺 俄罗斯 (Russia) 01 - lyqsp
   - 🇷🇺 俄罗斯 (Russia) 02 - lyqsp
   - 🇷🇺 俄罗斯 (Russia) 03 - lyqsp
+  - 🇷🇺 俄罗斯 (Russia) 04 - lyqsp
+  - 🇷🇺 俄罗斯 (Russia) 05 - lyqsp
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -41,5 +71,7 @@ proxy-groups:
   - 🇷🇺 俄罗斯 (Russia) 01 - lyqsp
   - 🇷🇺 俄罗斯 (Russia) 02 - lyqsp
   - 🇷🇺 俄罗斯 (Russia) 03 - lyqsp
+  - 🇷🇺 俄罗斯 (Russia) 04 - lyqsp
+  - 🇷🇺 俄罗斯 (Russia) 05 - lyqsp
 rules:
 - MATCH,PROXIES

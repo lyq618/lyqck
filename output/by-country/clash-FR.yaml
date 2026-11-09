@@ -6,7 +6,7 @@ log-level: info
 proxies:
 - name: 🇫🇷 法国 (France) 01 - lyqsp
   type: vmess
-  server: 162.19.204.71
+  server: 141.95.65.9
   port: 1234
   uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
   alterId: 0
@@ -16,13 +16,28 @@ proxies:
   skip-cert-verify: true
   servername: ''
 - name: 🇫🇷 法国 (France) 02 - lyqsp
-  type: ss
-  server: 38.109.228.110
-  port: 19999
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  type: vmess
+  server: 162.19.204.71
+  port: 1234
+  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
+  alterId: 0
+  cipher: auto
   udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ''
 - name: 🇫🇷 法国 (France) 03 - lyqsp
+  type: vmess
+  server: 141.95.65.9
+  port: 1234
+  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ''
+- name: 🇫🇷 法国 (France) 04 - lyqsp
   type: vless
   server: 51.77.217.70
   port: 2053
@@ -33,28 +48,25 @@ proxies:
   reality-opts:
     public-key: g63cT3uI0Y5iUtj3m__RYz7nmR1eIK4AYikdnZCl63w
   servername: www.apple.com
-  client-fingerprint: firefox
-- name: 🇫🇷 法国 (France) 04 - lyqsp
+  client-fingerprint: chrome
+- name: 🇫🇷 法国 (France) 05 - lyqsp
   type: ss
   server: 167.17.64.175
   port: 19999
   cipher: aes-256-gcm
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
   udp: true
-- name: 🇫🇷 法国 (France) 05 - lyqsp
-  type: ss
-  server: 167.17.64.27
-  port: 19999
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  udp: true
 - name: 🇫🇷 法国 (France) 06 - lyqsp
-  type: ss
-  server: 172.99.189.142
-  port: 19999
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  type: vmess
+  server: 162.19.204.71
+  port: 1234
+  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
+  alterId: 0
+  cipher: auto
   udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ''
 - name: 🇫🇷 法国 (France) 07 - lyqsp
   type: vmess
   server: 141.95.65.9
@@ -67,15 +79,31 @@ proxies:
   skip-cert-verify: true
   servername: ''
 - name: 🇫🇷 法国 (France) 08 - lyqsp
-  type: vless
-  server: 15.236.109.186
-  port: 2053
-  uuid: fbda2834-b1e7-4148-afb9-deda31036a30
+  type: ss
+  server: 172.99.189.142
+  port: 19999
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  udp: true
+- name: 🇫🇷 法国 (France) 09 - lyqsp
+  type: ss
+  server: 167.17.64.22
+  port: 19999
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  udp: true
+- name: 🇫🇷 法国 (France) 10 - lyqsp
+  type: vmess
+  server: 79.137.99.183
+  port: 1270
+  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
+  alterId: 0
+  cipher: auto
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: w.geogame.ir
-- name: 🇫🇷 法国 (France) 09 - lyqsp
+  servername: ''
+- name: 🇫🇷 法国 (France) 11 - lyqsp
   type: vless
   server: 51.77.217.70
   port: 2053
@@ -87,61 +115,7 @@ proxies:
     public-key: g63cT3uI0Y5iUtj3m__RYz7nmR1eIK4AYikdnZCl63w
   servername: www.apple.com
   client-fingerprint: chrome
-- name: 🇫🇷 法国 (France) 10 - lyqsp
-  type: ss
-  server: 23.162.152.22
-  port: 19999
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  udp: true
-- name: 🇫🇷 法国 (France) 11 - lyqsp
-  type: vmess
-  server: 141.95.65.9
-  port: 1234
-  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ''
 - name: 🇫🇷 法国 (France) 12 - lyqsp
-  type: vmess
-  server: 162.19.204.71
-  port: 1234
-  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ''
-- name: 🇫🇷 法国 (France) 13 - lyqsp
-  type: vmess
-  server: 141.95.65.9
-  port: 1234
-  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ''
-- name: 🇫🇷 法国 (France) 14 - lyqsp
-  type: vless
-  server: 104.20.45.141
-  port: 443
-  uuid: 50414e45-4c5f-5a45-5553-7e7818beb9aa
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: razk50e1uvss.amirhoseyn-meshki.workers.dev
-  network: ws
-  ws-opts:
-    path: /stream/PANEL_ZEUS/7e7818beb9aafp=unsafe
-    headers:
-      Host: razk50e1uvss.amirhoseyn-meshki.workers.dev
-- name: 🇫🇷 法国 (France) 15 - lyqsp
   type: vless
   server: 51.77.217.70
   port: 2053
@@ -153,7 +127,62 @@ proxies:
     public-key: g63cT3uI0Y5iUtj3m__RYz7nmR1eIK4AYikdnZCl63w
   servername: www.apple.com
   client-fingerprint: random
+- name: 🇫🇷 法国 (France) 13 - lyqsp
+  type: vmess
+  server: 162.19.204.71
+  port: 1234
+  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ''
+- name: 🇫🇷 法国 (France) 14 - lyqsp
+  type: vless
+  server: 15.236.109.186
+  port: 2053
+  uuid: fbda2834-b1e7-4148-afb9-deda31036a30
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: w.geogame.ir
+- name: 🇫🇷 法国 (France) 15 - lyqsp
+  type: ss
+  server: 38.109.228.110
+  port: 19999
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  udp: true
 - name: 🇫🇷 法国 (France) 16 - lyqsp
+  type: vless
+  server: w.geogame.ir
+  port: 2053
+  uuid: fbda2834-b1e7-4148-afb9-deda31036a30
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: w.geogame.ir
+- name: 🇫🇷 法国 (France) 17 - lyqsp
+  type: vless
+  server: 51.77.217.70
+  port: 2053
+  uuid: bf16ee0c-8b3c-41e4-ab3a-8b48033c404e
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: g63cT3uI0Y5iUtj3m__RYz7nmR1eIK4AYikdnZCl63w
+  servername: www.apple.com
+  client-fingerprint: firefox
+- name: 🇫🇷 法国 (France) 18 - lyqsp
+  type: ss
+  server: 167.17.64.27
+  port: 19999
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  udp: true
+- name: 🇫🇷 法国 (France) 19 - lyqsp
   type: vless
   server: 152.228.162.19
   port: 80
@@ -166,7 +195,7 @@ proxies:
     path: /vless/
     headers:
       Host: 152.228.162.19
-- name: 🇫🇷 法国 (France) 17 - lyqsp
+- name: 🇫🇷 法国 (France) 20 - lyqsp
   type: vless
   server: 138.124.70.41
   port: 14430
@@ -179,7 +208,7 @@ proxies:
     path: /vless
     headers:
       Host: 138.124.70.41
-- name: 🇫🇷 法国 (France) 18 - lyqsp
+- name: 🇫🇷 法国 (France) 21 - lyqsp
   type: vless
   server: 138.124.70.41
   port: 14430
@@ -192,54 +221,13 @@ proxies:
     path: /vless
     headers:
       Host: 138.124.70.41
-- name: 🇫🇷 法国 (France) 19 - lyqsp
+- name: 🇫🇷 法国 (France) 22 - lyqsp
   type: ss
-  server: 167.17.64.22
+  server: 23.162.152.22
   port: 19999
   cipher: aes-256-gcm
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
   udp: true
-- name: 🇫🇷 法国 (France) 20 - lyqsp
-  type: vless
-  server: w.geogame.ir
-  port: 2053
-  uuid: fbda2834-b1e7-4148-afb9-deda31036a30
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: w.geogame.ir
-- name: 🇫🇷 法国 (France) 21 - lyqsp
-  type: vless
-  server: 51.77.217.70
-  port: 2053
-  uuid: bf16ee0c-8b3c-41e4-ab3a-8b48033c404e
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: g63cT3uI0Y5iUtj3m__RYz7nmR1eIK4AYikdnZCl63w
-  servername: www.apple.com
-  client-fingerprint: chrome
-- name: 🇫🇷 法国 (France) 22 - lyqsp
-  type: vmess
-  server: 162.19.204.71
-  port: 1234
-  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ''
-- name: 🇫🇷 法国 (France) 23 - lyqsp
-  type: vless
-  server: 15.236.109.186
-  port: 2053
-  uuid: fbda2834-b1e7-4148-afb9-deda31036a30
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: w.geogame.ir
 proxy-groups:
 - name: PROXIES
   type: select
@@ -267,7 +255,6 @@ proxy-groups:
   - 🇫🇷 法国 (France) 20 - lyqsp
   - 🇫🇷 法国 (France) 21 - lyqsp
   - 🇫🇷 法国 (France) 22 - lyqsp
-  - 🇫🇷 法国 (France) 23 - lyqsp
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -295,6 +282,5 @@ proxy-groups:
   - 🇫🇷 法国 (France) 20 - lyqsp
   - 🇫🇷 法国 (France) 21 - lyqsp
   - 🇫🇷 法国 (France) 22 - lyqsp
-  - 🇫🇷 法国 (France) 23 - lyqsp
 rules:
 - MATCH,PROXIES
