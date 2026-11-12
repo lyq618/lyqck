@@ -19,10 +19,10 @@ proxies:
       Host: 193.188.21.253
 - name: 🇸🇪 SE 02 - lyqsp
   type: ss
-  server: 138.199.55.243
-  port: 19999
+  server: 70.34.212.124
+  port: 8388
   cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  password: AxIYWtskJWIIaefW
   udp: true
 - name: 🇸🇪 SE 03 - lyqsp
   type: vmess
@@ -48,6 +48,13 @@ proxies:
     path: /vless
     headers:
       Host: 5.178.109.174
+- name: 🇸🇪 SE 05 - lyqsp
+  type: ss
+  server: 138.199.55.243
+  port: 19999
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  udp: true
 proxy-groups:
 - name: PROXIES
   type: select
@@ -57,6 +64,7 @@ proxy-groups:
   - 🇸🇪 SE 02 - lyqsp
   - 🇸🇪 SE 03 - lyqsp
   - 🇸🇪 SE 04 - lyqsp
+  - 🇸🇪 SE 05 - lyqsp
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -66,5 +74,6 @@ proxy-groups:
   - 🇸🇪 SE 02 - lyqsp
   - 🇸🇪 SE 03 - lyqsp
   - 🇸🇪 SE 04 - lyqsp
+  - 🇸🇪 SE 05 - lyqsp
 rules:
 - MATCH,PROXIES

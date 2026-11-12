@@ -6,18 +6,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇱🇻 LV 01 - lyqsp",
-        "🇱🇻 LV 02 - lyqsp",
-        "🇱🇻 LV 03 - lyqsp"
+        "🇹🇼 中国台湾 (Taiwan) 01 (家宽) - lyqsp"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇱🇻 LV 01 - lyqsp",
-        "🇱🇻 LV 02 - lyqsp",
-        "🇱🇻 LV 03 - lyqsp"
+        "🇹🇼 中国台湾 (Taiwan) 01 (家宽) - lyqsp"
       ],
       "url": "https://www.google.com/generate_204"
     },
