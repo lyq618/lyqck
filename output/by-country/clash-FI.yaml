@@ -6,7 +6,16 @@ log-level: info
 proxies:
 - name: 🇫🇮 FI 01 - lyqsp
   type: vless
-  server: 109.120.134.181
+  server: 65.109.208.183
+  port: 443
+  uuid: 5f07a2a1-82a5-494d-847b-b882e6903192
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: free.for.member.iiproxy.com
+- name: 🇫🇮 FI 02 - lyqsp
+  type: vless
+  server: 138.124.124.157
   port: 443
   uuid: 99c5b713-dedf-4a10-8070-916ff3f49b0e
   udp: true
@@ -15,18 +24,9 @@ proxies:
   servername: fs.qicai99.com
   network: ws
   ws-opts:
-    path: /fp=chrome
+    path: /
     headers:
       Host: fs.qicai99.com
-- name: 🇫🇮 FI 02 - lyqsp
-  type: vless
-  server: 65.109.208.183
-  port: 443
-  uuid: 5f07a2a1-82a5-494d-847b-b882e6903192
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: free.for.member.iiproxy.com
 - name: 🇫🇮 FI 03 - lyqsp
   type: vless
   server: 45.144.234.157
@@ -69,15 +69,6 @@ proxies:
       Host: fs.qicai99.com
 - name: 🇫🇮 FI 06 - lyqsp
   type: vless
-  server: 65.109.208.183
-  port: 443
-  uuid: 5f07a2a1-82a5-494d-847b-b882e6903192
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: free.for.member.iiproxy.com
-- name: 🇫🇮 FI 07 - lyqsp
-  type: vless
   server: 146.103.118.189
   port: 443
   uuid: ce698f0c-a8ec-474a-b5d8-3be8032deeb8
@@ -90,9 +81,18 @@ proxies:
     path: /574ck-finland
     headers:
       Host: nl2.574ck.xyz
+- name: 🇫🇮 FI 07 - lyqsp
+  type: vless
+  server: 65.109.208.183
+  port: 443
+  uuid: 5f07a2a1-82a5-494d-847b-b882e6903192
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: free.for.member.iiproxy.com
 - name: 🇫🇮 FI 08 - lyqsp
   type: vless
-  server: 138.124.124.157
+  server: 109.120.134.181
   port: 443
   uuid: 99c5b713-dedf-4a10-8070-916ff3f49b0e
   udp: true
