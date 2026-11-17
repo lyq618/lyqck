@@ -6,16 +6,16 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇱🇰 LK 01 - lyqsp",
-        "🇱🇰 LK 02 - lyqsp"
+        "🇭🇰 中国香港 (Hong Kong) 01 (家宽) - lyqsp",
+        "🇩🇪 德国 (Germany) 02 (家宽) - lyqsp"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇱🇰 LK 01 - lyqsp",
-        "🇱🇰 LK 02 - lyqsp"
+        "🇭🇰 中国香港 (Hong Kong) 01 (家宽) - lyqsp",
+        "🇩🇪 德国 (Germany) 02 (家宽) - lyqsp"
       ],
       "url": "https://www.google.com/generate_204"
     },
