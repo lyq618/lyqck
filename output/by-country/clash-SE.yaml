@@ -25,18 +25,6 @@ proxies:
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
   udp: true
 - name: 🇸🇪 SE 03 - lyqsp
-  type: vless
-  server: 88.216.214.159
-  port: 443
-  uuid: a30903dc-1bf0-4be5-8b1b-603a3a56211c
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: drl7nndYdfzZY1aQ0eUAWmNV0nsHig2uDnu9siy9biQ
-  servername: api-svc-mgr.galioncc.com
-  client-fingerprint: chrome
-- name: 🇸🇪 SE 04 - lyqsp
   type: vmess
   server: 62.93.166.184
   port: 1270
@@ -55,7 +43,6 @@ proxy-groups:
   - 🇸🇪 SE 01 - lyqsp
   - 🇸🇪 SE 02 - lyqsp
   - 🇸🇪 SE 03 - lyqsp
-  - 🇸🇪 SE 04 - lyqsp
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -64,6 +51,5 @@ proxy-groups:
   - 🇸🇪 SE 01 - lyqsp
   - 🇸🇪 SE 02 - lyqsp
   - 🇸🇪 SE 03 - lyqsp
-  - 🇸🇪 SE 04 - lyqsp
 rules:
 - MATCH,PROXIES
