@@ -6,6 +6,41 @@ log-level: info
 proxies:
 - name: 🇷🇺 俄罗斯 (Russia) 01 - lyqsp
   type: vless
+  server: mimowhat.online
+  port: 443
+  uuid: 37fc45b0-be4d-4920-a0f7-7389e406f5f3
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: mimowhat.online
+  network: ws
+  ws-opts:
+    path: /content/session/24143d1e15019b9c79a3b463/
+    headers:
+      Host: mimowhat.online
+- name: 🇷🇺 俄罗斯 (Russia) 02 - lyqsp
+  type: ss
+  server: 130.49.189.158
+  port: 43558
+  cipher: chacha20-ietf-poly1305
+  password: LNc9h/4NA9Q6ZHNeYHoT5X/fR9aoE9KQR1SWhVDHBog=
+  udp: true
+- name: 🇷🇺 俄罗斯 (Russia) 03 - lyqsp
+  type: vless
+  server: 185.178.208.167
+  port: 443
+  uuid: ffb2c504-2c6c-49f3-b4bd-9fd3ff6ce454
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: unlik.club
+  network: ws
+  ws-opts:
+    path: /static/telemetry/3c9aaef00005/
+    headers:
+      Host: tochkacdn.top
+- name: 🇷🇺 俄罗斯 (Russia) 04 - lyqsp
+  type: vless
   server: 136.148.83.69
   port: 443
   uuid: 666821a2-5c3d-0001-a56f-5a3a562d7324
@@ -13,7 +48,30 @@ proxies:
   tls: true
   skip-cert-verify: true
   servername: szqbx-ru-77dc.my-fade.cloud
-- name: 🇷🇺 俄罗斯 (Russia) 02 - lyqsp
+- name: 🇷🇺 俄罗斯 (Russia) 05 - lyqsp
+  type: vless
+  server: 136.148.83.69
+  port: 443
+  uuid: 666821a2-5c3d-0001-a56f-5a3a562d7324
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: szqbx-ru-77dc.my-fade.cloud
+- name: 🇷🇺 俄罗斯 (Russia) 06 - lyqsp
+  type: vless
+  server: 185.178.208.167
+  port: 443
+  uuid: ffb2c504-2c6c-49f3-b4bd-9fd3ff6ce454
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: unlik.club
+  network: ws
+  ws-opts:
+    path: /static/telemetry/3c9aaef00005/
+    headers:
+      Host: tochkacdn.top
+- name: 🇷🇺 俄罗斯 (Russia) 07 - lyqsp
   type: vless
   server: 147.45.175.81
   port: 443
@@ -27,22 +85,6 @@ proxies:
     path: /wsru
     headers:
       Host: xsru2.freeddns.org
-- name: 🇷🇺 俄罗斯 (Russia) 03 - lyqsp
-  type: ss
-  server: 130.49.189.158
-  port: 43558
-  cipher: chacha20-ietf-poly1305
-  password: LNc9h/4NA9Q6ZHNeYHoT5X/fR9aoE9KQR1SWhVDHBog=
-  udp: true
-- name: 🇷🇺 俄罗斯 (Russia) 04 - lyqsp
-  type: vless
-  server: 136.148.83.69
-  port: 443
-  uuid: 666821a2-5c3d-0001-a56f-5a3a562d7324
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: szqbx-ru-77dc.my-fade.cloud
 proxy-groups:
 - name: PROXIES
   type: select
@@ -52,6 +94,9 @@ proxy-groups:
   - 🇷🇺 俄罗斯 (Russia) 02 - lyqsp
   - 🇷🇺 俄罗斯 (Russia) 03 - lyqsp
   - 🇷🇺 俄罗斯 (Russia) 04 - lyqsp
+  - 🇷🇺 俄罗斯 (Russia) 05 - lyqsp
+  - 🇷🇺 俄罗斯 (Russia) 06 - lyqsp
+  - 🇷🇺 俄罗斯 (Russia) 07 - lyqsp
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -61,5 +106,8 @@ proxy-groups:
   - 🇷🇺 俄罗斯 (Russia) 02 - lyqsp
   - 🇷🇺 俄罗斯 (Russia) 03 - lyqsp
   - 🇷🇺 俄罗斯 (Russia) 04 - lyqsp
+  - 🇷🇺 俄罗斯 (Russia) 05 - lyqsp
+  - 🇷🇺 俄罗斯 (Russia) 06 - lyqsp
+  - 🇷🇺 俄罗斯 (Russia) 07 - lyqsp
 rules:
 - MATCH,PROXIES
