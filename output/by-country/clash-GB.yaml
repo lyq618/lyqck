@@ -6,49 +6,61 @@ log-level: info
 proxies:
 - name: 🇬🇧 英国 (United Kingdom) 01 - lyqsp
   type: ss
-  server: 141.98.101.178
-  port: 443
-  cipher: aes-128-gcm
-  password: shadowsocks
+  server: 198.244.201.129
+  port: 19999
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
   udp: true
 - name: 🇬🇧 英国 (United Kingdom) 02 - lyqsp
-  type: vless
-  server: node-uk.connectsuite.org
-  port: 8443
-  uuid: c08f0056-7a6d-4931-813b-aaa3cdd00aed
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: node-uk.connectsuite.org
-- name: 🇬🇧 英国 (United Kingdom) 03 - lyqsp
   type: ss
   server: 141.98.101.181
   port: 443
   cipher: aes-128-gcm
   password: shadowsocks
   udp: true
-- name: 🇬🇧 英国 (United Kingdom) 04 - lyqsp
+- name: 🇬🇧 英国 (United Kingdom) 03 - lyqsp
   type: ss
-  server: 185.176.206.9
+  server: 141.98.101.178
+  port: 443
+  cipher: aes-128-gcm
+  password: shadowsocks
+  udp: true
+- name: 🇬🇧 英国 (United Kingdom) 04 - lyqsp
+  type: vless
+  server: 51.38.71.147
+  port: 443
+  uuid: fda89998-7e9a-4494-857a-cd0d00661b58
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: uk1.connectsuite.org
+  network: ws
+  ws-opts:
+    path: /cdn-cgi/ws
+    headers:
+      Host: 51.38.71.147
+- name: 🇬🇧 英国 (United Kingdom) 05 - lyqsp
+  type: ss
+  server: 142.202.51.22
   port: 19999
   cipher: aes-256-gcm
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
   udp: true
-- name: 🇬🇧 英国 (United Kingdom) 05 - lyqsp
+- name: 🇬🇧 英国 (United Kingdom) 06 - lyqsp
+  type: ss
+  server: 141.98.101.181
+  port: 443
+  cipher: aes-128-gcm
+  password: shadowsocks
+  udp: true
+- name: 🇬🇧 英国 (United Kingdom) 07 - lyqsp
   type: ss
   server: 158.173.24.73
   port: 443
   cipher: aes-128-gcm
   password: shadowsocks
   udp: true
-- name: 🇬🇧 英国 (United Kingdom) 06 - lyqsp
-  type: ss
-  server: 38.114.120.221
-  port: 19999
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  udp: true
-- name: 🇬🇧 英国 (United Kingdom) 07 - lyqsp
+- name: 🇬🇧 英国 (United Kingdom) 08 - lyqsp
   type: vless
   server: 57.129.132.223
   port: 80
@@ -61,14 +73,23 @@ proxies:
     path: /vless/
     headers:
       Host: google.com
-- name: 🇬🇧 英国 (United Kingdom) 08 - lyqsp
+- name: 🇬🇧 英国 (United Kingdom) 09 - lyqsp
+  type: vless
+  server: node-uk.connectsuite.org
+  port: 8443
+  uuid: c08f0056-7a6d-4931-813b-aaa3cdd00aed
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: node-uk.connectsuite.org
+- name: 🇬🇧 英国 (United Kingdom) 10 - lyqsp
   type: ss
-  server: 198.244.201.129
+  server: 185.176.206.9
   port: 19999
   cipher: aes-256-gcm
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
   udp: true
-- name: 🇬🇧 英国 (United Kingdom) 09 - lyqsp
+- name: 🇬🇧 英国 (United Kingdom) 11 - lyqsp
   type: vmess
   server: 57.129.132.223
   port: 80
@@ -83,35 +104,35 @@ proxies:
     path: /vmess/
     headers:
       Host: google.com
-- name: 🇬🇧 英国 (United Kingdom) 10 - lyqsp
-  type: ss
-  server: 142.202.51.22
-  port: 19999
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  udp: true
-- name: 🇬🇧 英国 (United Kingdom) 11 - lyqsp
-  type: ss
-  server: 94.156.250.148
-  port: 7001
-  cipher: aes-256-gcm
-  password: RexnBgU7EV5ADxG
-  udp: true
 - name: 🇬🇧 英国 (United Kingdom) 12 - lyqsp
-  type: ss
-  server: 185.176.206.9
-  port: 19999
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  udp: true
-- name: 🇬🇧 英国 (United Kingdom) 13 - lyqsp
   type: ss
   server: 198.244.202.215
   port: 19999
   cipher: aes-256-gcm
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
   udp: true
+- name: 🇬🇧 英国 (United Kingdom) 13 - lyqsp
+  type: ss
+  server: 94.156.250.148
+  port: 7001
+  cipher: aes-256-gcm
+  password: RexnBgU7EV5ADxG
+  udp: true
 - name: 🇬🇧 英国 (United Kingdom) 14 - lyqsp
+  type: vless
+  server: 51.38.71.147
+  port: 443
+  uuid: fda89998-7e9a-4494-857a-cd0d00661b58
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: uk1.connectsuite.org
+  network: ws
+  ws-opts:
+    path: /cdn-cgi/ws
+    headers:
+      Host: uk1.connectsuite.org
+- name: 🇬🇧 英国 (United Kingdom) 15 - lyqsp
   type: vless
   server: 51.38.71.147
   port: 8443
@@ -120,12 +141,19 @@ proxies:
   tls: true
   skip-cert-verify: true
   servername: node-uk.connectsuite.org
-- name: 🇬🇧 英国 (United Kingdom) 15 - lyqsp
+- name: 🇬🇧 英国 (United Kingdom) 16 - lyqsp
   type: ss
-  server: 141.98.101.181
-  port: 443
-  cipher: aes-128-gcm
-  password: shadowsocks
+  server: 38.114.120.221
+  port: 19999
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  udp: true
+- name: 🇬🇧 英国 (United Kingdom) 17 - lyqsp
+  type: ss
+  server: 185.176.206.9
+  port: 19999
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
   udp: true
 proxy-groups:
 - name: PROXIES
@@ -147,6 +175,8 @@ proxy-groups:
   - 🇬🇧 英国 (United Kingdom) 13 - lyqsp
   - 🇬🇧 英国 (United Kingdom) 14 - lyqsp
   - 🇬🇧 英国 (United Kingdom) 15 - lyqsp
+  - 🇬🇧 英国 (United Kingdom) 16 - lyqsp
+  - 🇬🇧 英国 (United Kingdom) 17 - lyqsp
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -167,5 +197,7 @@ proxy-groups:
   - 🇬🇧 英国 (United Kingdom) 13 - lyqsp
   - 🇬🇧 英国 (United Kingdom) 14 - lyqsp
   - 🇬🇧 英国 (United Kingdom) 15 - lyqsp
+  - 🇬🇧 英国 (United Kingdom) 16 - lyqsp
+  - 🇬🇧 英国 (United Kingdom) 17 - lyqsp
 rules:
 - MATCH,PROXIES
