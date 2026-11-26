@@ -6,14 +6,28 @@ log-level: info
 proxies:
 - name: 🇷🇺 俄罗斯 (Russia) 01 - lyqsp
   type: vless
-  server: 136.148.83.70
+  server: 147.45.221.225
+  port: 443
+  uuid: 58e22afd-bf74-4736-984d-63a8ca03d7f0
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: nl.lucheeebezlimitnoekino.stream
+  network: ws
+  ws-opts:
+    path: /media/ws/
+    headers:
+      Host: 147.45.221.225
+- name: 🇷🇺 俄罗斯 (Russia) 02 - lyqsp
+  type: vless
+  server: 136.148.83.71
   port: 443
   uuid: 00000000-0000-0001-0000-000000000000
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: aszbk-ru-78dc.my-fade.cloud
-- name: 🇷🇺 俄罗斯 (Russia) 02 - lyqsp
+  servername: wccfu-ru-79dc.my-fade.cloud
+- name: 🇷🇺 俄罗斯 (Russia) 03 - lyqsp
   type: vless
   server: 136.148.83.70
   port: 443
@@ -22,7 +36,16 @@ proxies:
   tls: true
   skip-cert-verify: true
   servername: aszbk-ru-78dc.my-fade.cloud
-- name: 🇷🇺 俄罗斯 (Russia) 03 - lyqsp
+- name: 🇷🇺 俄罗斯 (Russia) 04 - lyqsp
+  type: vless
+  server: 136.148.83.70
+  port: 443
+  uuid: 00000000-0000-0001-0000-000000000000
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: aszbk-ru-78dc.my-fade.cloud
+- name: 🇷🇺 俄罗斯 (Russia) 05 - lyqsp
   type: vless
   server: 147.45.221.225
   port: 443
@@ -36,33 +59,13 @@ proxies:
     path: /media/ws/
     headers:
       Host: 147.45.221.225
-- name: 🇷🇺 俄罗斯 (Russia) 04 - lyqsp
-  type: vless
-  server: 136.148.83.69
-  port: 443
-  uuid: 7dff1be7-b930-0001-a8ad-dc7850168215
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: szqbx-ru-77dc.my-fade.cloud
-- name: 🇷🇺 俄罗斯 (Russia) 05 - lyqsp
-  type: vless
-  server: 136.148.83.70
-  port: 443
-  uuid: 00000000-0000-0001-0000-000000000000
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: aszbk-ru-78dc.my-fade.cloud
 - name: 🇷🇺 俄罗斯 (Russia) 06 - lyqsp
-  type: vless
-  server: 136.148.83.69
-  port: 443
-  uuid: 666821a2-5c3d-0001-a56f-5a3a562d7324
+  type: ss
+  server: 130.49.189.158
+  port: 43558
+  cipher: chacha20-ietf-poly1305
+  password: LNc9h/4NA9Q6ZHNeYHoT5X/fR9aoE9KQR1SWhVDHBog=
   udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: szqbx-ru-77dc.my-fade.cloud
 - name: 🇷🇺 俄罗斯 (Russia) 07 - lyqsp
   type: vless
   server: 136.148.83.71
@@ -72,6 +75,45 @@ proxies:
   tls: true
   skip-cert-verify: true
   servername: wccfu-ru-79dc.my-fade.cloud
+- name: 🇷🇺 俄罗斯 (Russia) 08 - lyqsp
+  type: vless
+  server: 136.148.83.71
+  port: 443
+  uuid: 00000000-0000-0001-0000-000000000000
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: wccfu-ru-79dc.my-fade.cloud
+- name: 🇷🇺 俄罗斯 (Russia) 09 - lyqsp
+  type: vless
+  server: 136.148.83.69
+  port: 443
+  uuid: 7dff1be7-b930-0001-a8ad-dc7850168215
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: szqbx-ru-77dc.my-fade.cloud
+- name: 🇷🇺 俄罗斯 (Russia) 10 - lyqsp
+  type: vless
+  server: 188.225.33.67
+  port: 443
+  uuid: b432a23a-acff-425c-bf69-70480cd6ed09
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: e2.cdnwh.icu
+  network: ws
+  ws-opts:
+    path: /stream/segment/3078a41dd7eb/
+    headers:
+      Host: e2.cdnwh.icu
+- name: 🇷🇺 俄罗斯 (Russia) 11 - lyqsp
+  type: ss
+  server: 194.87.69.12
+  port: 18443
+  cipher: aes-256-gcm
+  password: 5mKjXAGrliIAlYwWDeFzkCEMIgQdFQLe
+  udp: true
 proxy-groups:
 - name: PROXIES
   type: select
@@ -84,6 +126,10 @@ proxy-groups:
   - 🇷🇺 俄罗斯 (Russia) 05 - lyqsp
   - 🇷🇺 俄罗斯 (Russia) 06 - lyqsp
   - 🇷🇺 俄罗斯 (Russia) 07 - lyqsp
+  - 🇷🇺 俄罗斯 (Russia) 08 - lyqsp
+  - 🇷🇺 俄罗斯 (Russia) 09 - lyqsp
+  - 🇷🇺 俄罗斯 (Russia) 10 - lyqsp
+  - 🇷🇺 俄罗斯 (Russia) 11 - lyqsp
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -96,5 +142,9 @@ proxy-groups:
   - 🇷🇺 俄罗斯 (Russia) 05 - lyqsp
   - 🇷🇺 俄罗斯 (Russia) 06 - lyqsp
   - 🇷🇺 俄罗斯 (Russia) 07 - lyqsp
+  - 🇷🇺 俄罗斯 (Russia) 08 - lyqsp
+  - 🇷🇺 俄罗斯 (Russia) 09 - lyqsp
+  - 🇷🇺 俄罗斯 (Russia) 10 - lyqsp
+  - 🇷🇺 俄罗斯 (Russia) 11 - lyqsp
 rules:
 - MATCH,PROXIES
